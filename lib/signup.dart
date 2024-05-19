@@ -129,6 +129,7 @@ class _signUpState extends State<signUp> {
                           fontWeight: FontWeight.bold),
                     ),
                     password(
+                      
                       pass: _pass,
                     )
                   ],
