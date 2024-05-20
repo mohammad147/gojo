@@ -1,13 +1,16 @@
+import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:gojo/firebase_options.dart';
 import 'package:gojo/generated/l10n.dart';
+import 'package:gojo/jordanPage.dart';
 import 'package:gojo/loginPage.dart';
 import 'package:gojo/term_of_use.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
+ 
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -85,7 +88,7 @@ class _MyAppState extends State<MyApp> {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 241, 66, 53)),
         useMaterial3: true,
       ),
-      home: SignInPage(change: changeLanguage,),
+       home: SignInPage(change: changeLanguage,),
     );
   }
 }
