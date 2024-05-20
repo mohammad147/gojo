@@ -350,10 +350,10 @@ class S {
     );
   }
 
-  /// `edit my Profile button`
+  /// `Edit My Profile Button`
   String get edit_my_prof_button {
     return Intl.message(
-      'edit my Profile button',
+      'Edit My Profile Button',
       name: 'edit_my_prof_button',
       desc: '',
       args: [],

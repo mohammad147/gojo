@@ -4,10 +4,12 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:gojo/firebase_options.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/loginPage.dart';
+import 'package:gojo/term_of_use.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-void main() async{
-   WidgetsFlutterBinding.ensureInitialized();
-await Firebase.initializeApp(
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(const MyApp());
@@ -74,15 +76,16 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: S.delegate.supportedLocales,
       title: 'GOJO',
       theme: ThemeData(
-        
-        listTileTheme: ListTileThemeData(tileColor: Colors.white,shape: OutlineInputBorder(borderRadius: BorderRadius.circular(15))),
+        listTileTheme: ListTileThemeData(
+            tileColor: Colors.white,
+            shape: OutlineInputBorder(borderRadius: BorderRadius.circular(15))),
         appBarTheme: AppBarTheme(color: Color.fromARGB(255, 255, 87, 87)),
         scaffoldBackgroundColor: Color.fromARGB(255, 255, 87, 87),
         colorScheme:
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 241, 66, 53)),
         useMaterial3: true,
       ),
-      home: SignInPage(change: changeLanguage),
+      home: SignInPage(change: changeLanguage,),
     );
   }
 }

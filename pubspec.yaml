@@ -43,6 +43,8 @@ dependencies:
   cloud_firestore: ^4.14.0
   firebase_storage: ^11.6.0
   local_auth: ^2.2.0
+  confirm_dialog: ^1.0.3
+  carousel_slider: ^4.2.1
   
 dev_dependencies:
   flutter_test:
@@ -67,6 +69,99 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/logo/
+    - assets/Json_Files/
+    - assets/ajloun/Ajloun Forest Reserve
+    - assets/ajloun/Ajlun castle
+    - assets/ajloun/CHURCH OF OUR LADY IN THE MOUNt
+    - assets/ajloun/Listeb Mosque
+    - assets/ajloun/Tal mar elias
+    - assets/amman/Ain Ghazal
+    - assets/amman/Amman Citadel
+    - assets/amman/Ayyubid Watchtower, Amman
+    - assets/amman/Byzantine Church
+    - assets/amman/Kahf ar-Raqim
+    - assets/amman/Qasr Al Abd
+    - assets/amman/Qasr Al-Mshatta
+    - assets/amman/Qasr Al-Qastal
+    - assets/amman/Qasr Nuwayjis
+    - assets/amman/Qasr Tuba
+    - assets/amman/Roman Theater, Amman
+    - assets/amman/Rujm Al-Malfouf
+    - assets/amman/Tell Hesban
+    - assets/amman/Tell Jawa
+    - assets/amman/Qasr Bashir
+    - assets/amman/Temple of Hercules, Amman
+    - assets/amman/Ten Arches Bridge
+    - assets/amman/Umayyad Palace, Amman
+    - assets/amman/Umayyad Water Cistern, Amman
+    - assets/amman/Umm Al-Walid
+    - assets/amman/Umm ar-Rasas
+    - assets/Aqaba/Aqaba
+    - assets/Aqaba/Aqaba Church
+    - assets/Aqaba/Humayma
+    - assets/Aqaba/Tell Hujayrat Al-Ghuzlan
+    - assets/Aqaba/Wadi Rum
+    - assets/Balqa/Abu Jaber House
+    - assets/Balqa/Al-Hammam Street, Al-Salt
+    - assets/Balqa/Al-Maghtas
+    - assets/Balqa/Al-Salt
+    - assets/Balqa/Al-Salt Small Mosque
+    - assets/Balqa/Al-Salt Castle
+    - assets/Balqa/Latin Church
+    - assets/Balqa/St. George’s Church, Al-Salt
+    - assets/Jerash/Sakib
+    - assets/Jerash/Dhiban
+    - assets/Jerash/Jerash
+    - assets/Ma'an/Beidha
+    - assets/Ma'an/Byzantine Monastery at Jabal H
+    - assets/Ma'an/Great Temple in Petra
+    - assets/Ma'an/Montreal Castle
+    - assets/Ma'an/Petra
+    - assets/Ma'an/Qasr al-Bint
+    - assets/Ma'an/Temple of the Winged Lions
+    - assets/Ma'an/The Byzantine Church at Petra
+    - assets/Ma'an/Tomb of Aaron
+    - assets/Ma'an/Vaux Moise Castle
+    - assets/Madaba/Apostles Church, Madaba
+    - assets/Madaba/Callirrhoe
+    - assets/Madaba/Latin Church, Madaba
+    - assets/Madaba/Machaerus
+    - assets/Madaba/Madaba
+    - assets/Madaba/Mount Nebo Church
+    - assets/Madaba/St. George’s Church, Madaba
+    - assets/Madaba/Virgin Mary Church, Madaba
+    - assets/Mafraq/Jawa Dam
+    - assets/Mafraq/Qasr Aseikhin
+    - assets/Mafraq/Qasr Deir Al-Kahf
+    - assets/Mafraq/Qasr el Burqu
+    - assets/Mafraq/Um Aljmal
+    - assets/Tafilah/Bozrah
+    - assets/Tafilah/Punon
+    - assets/Tafilah/Wadi Feynan Copper Mines
+    - assets/Zarqa/Qasr Ain Es-Sil
+    - assets/Zarqa/Qasr al Hallabat
+    - assets/Zarqa/Qasr Amra
+    - assets/Zarqa/Qasr Azraq
+    - assets/Zarqa/Qasr Hammam As Sarah
+    - assets/Zarqa/Qasr Kharana
+    - assets/Zarqa/Qasr Shabeeb
+    - assets/Zarqa/Qasr Usaykhim
+    - assets/Zarqa/Qasr Uweinid
+    - assets/Karak/Er Rabba
+    - assets/Karak/Bab edh-Dhra
+    - assets/Karak/Hasa Fort
+    - assets/Karak/Kerak Castle
+    - assets/Karak/Numeira
+    - assets/Karak/Qatrana Fort
+    - assets/Karak/Sanctuary of Agios Lot
+    - assets/Irbid/Abila
+    - assets/Irbid/Capitolias
+    - assets/Irbid/Iraq ed-Dubb
+    - assets/Irbid/Johfiyeh
+    - assets/Irbid/Pella
+    - assets/Irbid/Tell Zira’a
+    - assets/Irbid/Um Qais
+    
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

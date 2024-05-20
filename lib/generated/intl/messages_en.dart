@@ -37,7 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete Account"),
         "editProfile": MessageLookupByLibrary.simpleMessage("Edit My Profile"),
         "edit_my_prof_button":
-            MessageLookupByLibrary.simpleMessage("edit my Profile button"),
+            MessageLookupByLibrary.simpleMessage("Edit My Profile Button"),
         "fill": MessageLookupByLibrary.simpleMessage("please fill the form"),
         "fname": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPass":

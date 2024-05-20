@@ -1,0 +1,119 @@
+{
+    "terms_of_use": {
+      "english": {
+        "introduction": "Welcome to Go Jo! By using our app, you agree to these Terms of Use. Please read them carefully. If you do not agree to these terms, you may not use our services.",
+        "sections": [
+          {
+            "title": "1. Acceptance of Terms",
+            "content": "By downloading, accessing, or using the Go Jo app, you agree to be bound by these Terms of Use, including any future modifications."
+          },
+          {
+            "title": "2. Services Provided",
+            "content": "Go Jo is a travel app that offers users travel-related services such as booking accommodations, tours, and other travel-related activities."
+          },
+          {
+            "title": "3. User Accounts",
+            "content": "To use certain features of the app, you must create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account."
+          },
+          {
+            "title": "4. User Conduct",
+            "content": "You agree to use the app only for lawful purposes and in accordance with these terms. You must not use the app in any way that could damage, disable, overburden, or impair the app or interfere with any other party's use of the app."
+          },
+          {
+            "title": "5. Booking and Payment",
+            "content": "All bookings made through Go Jo are subject to availability. Payment must be made in accordance with the terms specified at the time of booking."
+          },
+          {
+            "title": "6. Cancellations and Refunds",
+            "content": "Cancellation policies and refund conditions will be outlined at the time of booking. It is your responsibility to review these policies before making a booking."
+          },
+          {
+            "title": "7. Intellectual Property",
+            "content": "All content and materials available on the app, including but not limited to text, graphics, logos, and software, are the property of Go Jo or its licensors and are protected by intellectual property laws."
+          },
+          {
+            "title": "8. Privacy",
+            "content": "Your use of the app is also governed by our Privacy Policy, which can be found [here](#)."
+          },
+          {
+            "title": "9. Disclaimer of Warranties",
+            "content": "The services provided by Go Jo are on an \"as is\" and \"as available\" basis. We do not guarantee that the app will be uninterrupted or error-free."
+          },
+          {
+            "title": "10. Limitation of Liability",
+            "content": "To the maximum extent permitted by law, Go Jo shall not be liable for any indirect, incidental, or consequential damages arising out of your use of the app."
+          },
+          {
+            "title": "11. Governing Law",
+            "content": "These terms shall be governed by and construed in accordance with the laws of Jordan. Any disputes arising out of these terms shall be subject to the exclusive jurisdiction of the courts of Jordan."
+          },
+          {
+            "title": "12. Changes to Terms",
+            "content": "Go Jo reserves the right to modify these Terms of Use at any time. We will notify you of any changes by posting the new terms on the app."
+          },
+          {
+            "title": "Contact Us",
+            "content": "If you have any questions about these Terms of Use, please contact us at support@gojo.com."
+          }
+        ]
+      },
+      "arabic": {
+        "introduction": "مرحباً بكم في جو جو! باستخدام تطبيقنا، فإنك توافق على هذه الشروط والأحكام. يرجى قراءتها بعناية. إذا كنت لا توافق على هذه الشروط، فلا يجوز لك استخدام خدماتنا.",
+        "sections": [
+          {
+            "title": "1. قبول الشروط",
+            "content": "بتحميل أو الوصول إلى أو استخدام تطبيق جو جو، فإنك توافق على الالتزام بهذه الشروط والأحكام، بما في ذلك أي تعديلات مستقبلية."
+          },
+          {
+            "title": "2. الخدمات المقدمة",
+            "content": "جو جو هو تطبيق سفر يقدم للمستخدمين خدمات متعلقة بالسفر مثل حجز الإقامات والجولات والأنشطة المتعلقة بالسفر."
+          },
+          {
+            "title": "3. حسابات المستخدمين",
+            "content": "لاستخدام ميزات معينة من التطبيق، يجب عليك إنشاء حساب. أنت مسؤول عن الحفاظ على سرية معلومات حسابك وعن جميع الأنشطة التي تحدث تحت حسابك."
+          },
+          {
+            "title": "4. سلوك المستخدم",
+            "content": "أنت توافق على استخدام التطبيق لأغراض قانونية فقط ووفقًا لهذه الشروط. يجب ألا تستخدم التطبيق بأي طريقة قد تضر أو تعطل أو تثقل أو تضعف التطبيق أو تتداخل مع استخدام أي طرف آخر للتطبيق."
+          },
+          {
+            "title": "5. الحجز والدفع",
+            "content": "جميع الحجوزات التي تتم من خلال جو جو تخضع للتوافر. يجب الدفع وفقًا للشروط المحددة في وقت الحجز."
+          },
+          {
+            "title": "6. الإلغاء والاسترداد",
+            "content": "سيتم توضيح سياسات الإلغاء وشروط الاسترداد في وقت الحجز. من مسؤوليتك مراجعة هذه السياسات قبل إجراء الحجز."
+          },
+          {
+            "title": "7. الملكية الفكرية",
+            "content": "جميع المحتويات والمواد المتاحة على التطبيق، بما في ذلك على سبيل المثال لا الحصر النصوص والرسومات والشعارات والبرامج، هي ملك لجو جو أو مرخصيها وتحميها قوانين الملكية الفكرية."
+          },
+          {
+            "title": "8. الخصوصية",
+            "content": "استخدامك للتطبيق يخضع أيضًا لسياسة الخصوصية الخاصة بنا، والتي يمكن العثور عليها [هنا](#)."
+          },
+          {
+            "title": "9. إخلاء المسؤولية عن الضمانات",
+            "content": "تُقدَّم خدمات جو جو على أساس \"كما هي\" و\"حسب التوافر\". نحن لا نضمن أن يكون التطبيق غير منقطع أو خاليًا من الأخطاء."
+          },
+          {
+            "title": "10. تحديد المسؤولية",
+            "content": "إلى أقصى حد مسموح به بموجب القانون، لن تكون جو جو مسؤولة عن أي أضرار غير مباشرة أو عرضية أو تبعية تنشأ عن استخدامك للتطبيق."
+          },
+          {
+            "title": "11. القانون الحاكم",
+            "content": "تخضع هذه الشروط وتفسر وفقًا لقوانين الأردن. أي نزاعات تنشأ عن هذه الشروط تخضع للاختصاص الحصري لمحاكم الأردن."
+          },
+          {
+            "title": "12. التغييرات على الشروط",
+            "content": "تحتفظ جو جو بالحق في تعديل هذه الشروط والأحكام في أي وقت. سنقوم بإخطارك بأي تغييرات عن طريق نشر الشروط الجديدة على التطبيق."
+          },
+          {
+            "title": "اتصل بنا",
+            "content": "إذا كانت لديك أي أسئلة حول شروط الاستخدام هذه، يرجى الاتصال بنا على support@gojo.com."
+          }
+        ]
+      }
+    }
+  }
+  

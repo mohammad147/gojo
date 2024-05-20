@@ -5,6 +5,7 @@ import 'package:gojo/auth.dart';
 import 'package:gojo/const/consts.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/homepage.dart';
+import 'package:gojo/profile.dart';
 import 'package:gojo/signup.dart';
 
 class SignInPage extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:confirm_dialog/confirm_dialog.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class edit_profile extends StatelessWidget {
   Map<String, dynamic> Data;
   final String email;
   final _formKey = GlobalKey<FormState>();
-  TextEditingController _pass = TextEditingController();
+  final TextEditingController _pass = TextEditingController();
   final TextEditingController _fname = TextEditingController();
   final TextEditingController _lname = TextEditingController();
   final TextEditingController _age = TextEditingController();
@@ -127,14 +128,13 @@ class edit_profile extends StatelessWidget {
                     TextFormField(
                       //initialValue: Data["Age"],
                       controller: _age,
-                       decoration: InputDecoration(
+                      decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(100)),
                         fillColor: Colors.white,
                         filled: true,
                         prefixIcon: Icon(Icons.account_box_sharp),
                       ),
-                      
                     ),
                     Text(
                       S.of(context).height,
@@ -146,7 +146,7 @@ class edit_profile extends StatelessWidget {
                     TextFormField(
                       //initialValue: Data["Height"],
                       controller: _height,
-                       decoration: InputDecoration(
+                      decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(100)),
                         fillColor: Colors.white,
@@ -164,7 +164,7 @@ class edit_profile extends StatelessWidget {
                     TextFormField(
                       // initialValue: Data["Weight"],
                       controller: _weight,
-                       decoration: InputDecoration(
+                      decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(100)),
                         fillColor: Colors.white,
@@ -178,18 +178,23 @@ class edit_profile extends StatelessWidget {
               ElevatedButton(
                   child: Text(S.of(context).edit_my_prof_button),
                   onPressed: () async {
-                    FirebaseFirestore.instance
-                        .collection("users")
-                        .doc(email)
-                        .set({
-                      "firstName": _fname.text,
-                      "LastName": _lname.text,
-                      "Age": _age.text,
-                      "Weight": _weight.text,
-                      "Height": _height.text,
-                    });
-                    auth.currentUser?.updatePassword(_pass.text);
-                    ;
+                    if (await confirm(context)) {
+                      FirebaseFirestore.instance
+                          .collection("users")
+                          .doc(email)
+                          .set({
+                        "firstName": _fname.text,
+                        "LastName": _lname.text,
+                        "Age": _age.text,
+                        "Weight": _weight.text,
+                        "Height": _height.text,
+                      });
+                      if (_pass.text.isNotEmpty) {
+                        auth.currentUser?.updatePassword(_pass.text);
+                      }
+                      Navigator.of(context).pop();
+                      ;
+                    }
                   }),
               ElevatedButton(
                   onPressed: () {

@@ -1,0 +1,767 @@
+[
+    {
+     "key": 1,
+     "Name": "Ajlun Castle",
+     "gov_key": 3,
+     "cat_key": 3,
+     "description": "Ajlun Castle, Qal'at Ajloun, Qa'lat ar-Rabad, is a 12th century Muslim castle situated in northwestern Jordan. It is placed on a hilltop belonging tothe Jabal Ajlun. It was built by the Ayyubids in the 12th century and enlarged by the Mamluks in the 13th.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 2,
+     "Name": "Listeb Mosque",
+     "gov_key": 3,
+     "cat_key": 4,
+     "description": "Listeb Mosuqe is one of the oldest mosques in Jordan. It is located in Ajloun Governorate in northern Jordan. The mosque was built buy theUmayyad Caliphate in the 8th century AD.",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 3,
+     "Name": "TAL MAR ELIAS",
+     "gov_key": 3,
+     "cat_key": 4,
+     "description": "Associated with the Prophet Elijah, Tall Mar Elias is very close to the ruins of a village known as Listib. It is believed that this place was formerly Tishbi, the home of Elijah, a native of Gilias in Tranjordan (2 Kings 17: I). The fact that this is a religious site is substantiated by the two churches that were built on the Tall (hilltop) at the end of the Byzantine period.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 4,
+     "Name": "CHURCH OF OUR LADY IN THE MOUNt",
+     "gov_key": 3,
+     "cat_key": 4,
+     "description": "In Anjara, in the north of Jordan, there is the Our Lady of the Mountain Church - a rebuilt cave that is venerated as a place where Jesus and his mother Mary passed during their journeys between the Sea of Galilee. Anjara was designated by the Vatican as a Millenium 2000 pilgrimage site.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 5,
+     "Name": "AJLOUN FOREST RESERVE",
+     "gov_key": 3,
+     "cat_key": 2,
+     "description": "Located in the Ajloun Highlands in the north of Jordan, this beautiful nature reserve consists of 13 km2 of rolling hill country dominated by open woodlands that are home to a diverse collection of plant and animal species. The rich greenery makes Ajloun a popular spot for picnickers and hikers, especially in the spring, when the reserve is coated in a wide variety of wildflowers.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 6,
+     "Name": "Umm ar-Rasas",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Umm ar-Rasas, Kastrom Mefa'a, Kastron Mefa'a, is Roman military camp that grew to become a town from the 5th century. It contains remains from the Roman, Byzantine and Early Muslim periods. Among the most important Byzantine monuments on the site are the Church of St. Sergius, which dates back to the 6th century AD and the Church of St. Stephen, which dates back to the 8th century. The site was inscribed as a UNESCOWorld Heritage Site in 2004.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 7,
+     "Name": "Ain Ghazal",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Ain Ghazal is a Neolithic site located in North-Western Jordan, on the outskirts of Amman. It dates as far back as 7250 BC, and was inhabited until5000 BC. Ain Ghazal ranks as one of the largest known prehistoric settlements in the Near East.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 8,
+     "Name": "Tell Hesban",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Tell Hesban, also Heshbon, Hesebon, Esebon, Esbous, Esebus, was an ancient town located east of the Jordan River in the modern kingdom ofJordan.",
+     "Name_arabic": "المسرح الروماني",
+     "description_arabic": "المسرح الذي بناه الرومان قديماً، يستخدم الآن للعروض الثقافية والموسيقية."
+    },
+    {
+     "key": 9,
+     "Name": "Amman Citadel",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Amman Citadel is an archaeological site located on a hill in the city of Amman, the capital of Jordan. The earliest evidence of settlement in the region dates back to the Neolithic period, while the fortification of the hill dates back to the Bronze Age around 1800 BC. In the first millennium BC the hill became the capital of the Kingdom of Ammon. After that, many civilizations occupied the city: the Assyrians, Babylonians, Ptolemies, Seleucids, Romans and Byzantines until the Umayyads came in the 7th century AD. The hill has a large collection of monuments that testify to the historical eras it passed through, including the Temple of Hercules, the Roman Theater, the Byzantine Church, the Umayyad Palace and theAyyubid Tower.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 10,
+     "Name": "Qasr Al Abd",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Qasr al-Abd, also known as Qasr iraq al-Amir, is a large Hellenistic palace from approximately 200 BC, whose ruins stand in western Jordan in thevalley of Wadi Seer.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 11,
+     "Name": "Qasr Al-Muwaqqar",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Qasr Al-Muwaqqar is an Umayyad fortified palace dating back to the 8th Century AD. It is located in Amman Governorate, Jordan.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 12,
+     "Name": "Qasr Al-Qastal",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Qasr Al-Qastal is an Umayyad palace built by Caliph Yazid bin Abd al-Malik in the 8th Century AD. It is located in Amman Governorate, Jordan.",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 13,
+     "Name": "Umm Al-Walid",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Umm Al-Walid is an Umayyad fortified palace dating back to the 8th Century AD. It is located in Amman Governorate, Jordan.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 14,
+     "Name": "Dabah Fort",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Dabah Fort is an old fort built by Ottomans in the 18th Century AD in order to provided pilgrims with the accommodation, water and food. The fortis located in Amman Governorate, Jordan.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 15,
+     "Name": "Qasr Bashir",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Qasr Bashir, Qasr Bashir, is a Roman Castellum lies in the Jordanian desert. It was Built at the beginning of the 4th century AD and known asMobene.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 16,
+     "Name": "Qasr Al-Mshatta",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Qasr Al-Mshatta, Qasr Al-Mshatta is the ruin of an Umayyad winter palace, probably commissioned by Caliph Al-Walid II (743-744). The ruins arelocated south of Amman, Jordan.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 17,
+     "Name": "Qasr Tuba",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Qasr Tuba is an Umayyad palace located in Amman Governorate, Jordan. It was built by Caliph al-Walid II in the 8th century AD.",
+     "Name_arabic": "المسرح الروماني",
+     "description_arabic": "المسرح الذي بناه الرومان قديماً، يستخدم الآن للعروض الثقافية والموسيقية."
+    },
+    {
+     "key": 18,
+     "Name": "Tell Jawa",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Tell Jawa is an archaeological mound located in central Jordan, in Amman Governorate. Excavations and research have revealed the remains of anIron Age village of the ancient Kingdom of Ammon.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 19,
+     "Name": "Qasr Nuwayjis",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Qasr Nuwayjis is a Roman mausoleum located in the Tabarbour area north of the Jordanian capital of Amman. The mausoleum was built in the late2nd century or in the beginning of the 3rd century AD.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 20,
+     "Name": "Ten Arches Bridge",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Ten Arches Bridge is a historic bridge from the Ottoman era located in the Qweismeh area in the southeast of the Jordanian capital, Amman. It wasbuilt in 1908 AD for the Hejaz Railway, and it consists of 10 arches.",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 21,
+     "Name": "Rujm Al-Malfouf",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Rujm Al-Malfouf is an archaeological landmark located on Jabal Amman in Amman, the capital of Jordan. The site is a circular watchtower thatdates back to the era of the Ammonite kingdom. It was built in the first half of the 1st millennium BC.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 22,
+     "Name": "Kahf ar-Raqim",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Kahf ar-Raqim (ar-Raqim Cave) is a historical cave located in the village of Al-Rajib, east of the Jordanian capital, Amman. The history of the cave dates back to the Roman and Byzantine periods, and it is one of the places that some believe was the cave of the seven sleepers. The siteincludes some tombs and finds from the Byzantine and Islamic periods, and today it is a shrine visited by people.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 23,
+     "Name": "Umayyad Palace, Amman",
+     "gov_key": 1,
+     "cat_key": 4,
+     "description": "Umayyad Palace is an ancient ruined palace located on the Citadel Hill (Amman Citadel) in Amman, the capital of Jordan. The palace was built bythe Umayyads in the first half of the 8th century AD, and is considered one of the most important Umayyad monuments in the city.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 24,
+     "Name": "Umayyad Water Cistern, Amman",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Umayyad Water Cistern is an ancient ruined Open Cistern located adjacent to the Umayyad Palace on the Citadel Hill (Amman Citadel), Amman,Jordan. The cistern was built in the 8th century AD during the time of the Umayyad Caliphate in order to meet the palace's need for water.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 25,
+     "Name": "Ayyubid Watchtower, Amman",
+     "gov_key": 1,
+     "cat_key": 4,
+     "description": "Ayyubid Watchtower is a ruined watchtower located on the walls of the Citadel Hill (Amman Citadel) in the Jordanian capital, Amman. It was",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 26,
+     "Name": "Temple of Hercules, Amman",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Temple of Hercules is an ancient Roman temple located on the Citadel Hill (Amman Citadel) in Amman, the capital of Jordan. It was built in the 2nd century AD, during the time of Geminius Marcianus who was a Roman senator and general, and the governor of the Province of Arabia between162-166 AD.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 27,
+     "Name": "Roman Theater, Amman",
+     "gov_key": 1,
+     "cat_key": 3,
+     "description": "Roman Theater in Amman is a Roman theater located in the Jordanian capital, Amman, on a hill opposite Citadel Hill (Amman Citadel). A Greek inscription on one of the columns indicates that the theater was built in honor of the Roman Emperor Antoninus Pius, who ruled from 138 to 161AD. The theatre can seat 6000 spectators and is still used today for cultural activities.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 28,
+     "Name": "Byzantine Church",
+     "gov_key": 1,
+     "cat_key": 4,
+     "description": "Byzantine Church in Amman is a ruined ancient church located next to the Umayyad Palace and the Temple of Hercules in Citadel Hill (Amman Citadel), Amman, Jordan. The church, which was built in the 6th century AD during the Byzantine era, consists of a mosaic-paved nave surroundedby two rows of columns.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 29,
+     "Name": "Abila",
+     "gov_key": 4,
+     "cat_key": 3,
+     "description": "Abila, Quwaylibah, distinguished as Abila in the Decapolis, Abila Dekapoleos, and also known for a time as Seleucia, was an ancient city in the Decapolis. It is occupied by two tells (Tell al-Abila and Tell Umm al-Amad) and the village of Hartha, north-northeast of Irbid, Jordan. Excavations indicate that the site was inhabited in the early Bronze Age, and appears to have been continually used by man since then. The site was in useuntil the Abbasid, Ayyubid and Mamluk periods.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 30,
+     "Name": "Capitolias",
+     "gov_key": 4,
+     "cat_key": 3,
+     "description": "Capitolias was an ancient city east of the Jordan River, and is identified with the modern village of Beit Ras in the Irbid Governorate in northernJordan.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 31,
+     "Name": "Iraq ed-Dubb",
+     "gov_key": 4,
+     "cat_key": 3,
+     "description": "Iraq ed-Dubb, or the Cave of the Bear, is an early Neolithic archeological site northwest of Ajlun in the Jordan Valley. The settlement existed before8000 BC and experimented with the cultivation of founder crops, side by side with the harvesting of wild cereals.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 32,
+     "Name": "Johfiyeh",
+     "gov_key": 4,
+     "cat_key": 3,
+     "description": "Tell Johfiyeh is an archeological site in the villages of Johfiyeh, Jordan, which dates back to the Bronze Age.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 33,
+     "Name": "Pella",
+     "gov_key": 4,
+     "cat_key": 3,
+     "description": "Pella, Tabaqat Fahl, is an anicient site located in northwestern Jordan. Pella represents one of ten Decapolis cities that were founded during the Hellenistic period and became powerful under Roman jurisdiction. With a history extending back into the Bronze Age, Pella expanded to its largeststate during the reign of the Roman Empire.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 34,
+     "Name": "Tell Zira´a",
+     "gov_key": 4,
+     "cat_key": 3,
+     "description": "Tell Zira'a is an archaeological tell in Jordan. Surveys and geophysical investigations showed the site's great potential for excavations.",
+     "Name_arabic": "المسرح الروماني",
+     "description_arabic": "المسرح الذي بناه الرومان قديماً، يستخدم الآن للعروض الثقافية والموسيقية."
+    },
+    {
+     "key": 35,
+     "Name": "Um Qais",
+     "gov_key": 4,
+     "cat_key": 3,
+     "description": "Umm Qais is a town in northern Jordan principally known for its proximity to the ruins of the ancient Gadara, a member of the Decapolis, and acenter of Greek culture in the region.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 36,
+     "Name": "Jerash",
+     "gov_key": 5,
+     "cat_key": 3,
+     "description": "Jerash, the Gerasa of Antiquity, is the capital and largest city of Jerash Governorate, which is situated in the north of Jordan. It was the site of theruins of the Greco-Roman city of Gerasa.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 37,
+     "Name": "Sakib",
+     "gov_key": 5,
+     "cat_key": 3,
+     "description": "Sakib is a Jordanian town in the northern corner of the country. During the Byzantine Empire the town was home to a Roman mint, and was also amajor center for the pressing of olives. This is evidenced by the large number of old Roman olive presses and by a large Byzantine cemetery.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 38,
+     "Name": "Dhiban",
+     "gov_key": 5,
+     "cat_key": 3,
+     "description": "Dhiban is a Jordanian town located in Madaba Governorate south of Amman and east of the Dead Sea. The ancient settlement lies adjacent to the modern town. Excavations have revealed that the site was occupied intermittently over the past 5,000 years, its earliest occupation occurring inthe Early Bronze Age in the third millennium BC.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 39,
+     "Name": "Machaerus",
+     "gov_key": 6,
+     "cat_key": 3,
+     "description": "Machaerus, Qal'atu l-Mishnaqa, is a fortified hilltop palace located near the eastern side of the Dead Sea. The fortress Machaerus was originallybuilt in the year 90 BC.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 40,
+     "Name": "Madaba",
+     "gov_key": 6,
+     "cat_key": 5,
+     "description": "Madaba is the capital city of Madaba Governorate in central Jordan. The town of Madaba was once a Moabite border city, and during its rule by the Roman and Byzantine empires from the 2nd to the 7th centuries, the city formed part of the Provincia Arabia. It was part of the southern district within the Bilad al-Sham province during the rule of the Islamic Umayyad Caliphate. The city includes a large group of archaeological monumentsthat express its antiquity.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 41,
+     "Name": "Mount Nebo Church",
+     "gov_key": 6,
+     "cat_key": 4,
+     "description": "Mount Nebo Byzantine Church is an ancient church located on the summit of Mount Nebo in the Madaba Governorate in Jordan. The church dates back to the Byzantine period in the 4th century AD. It is noteworthy that Mount Nebo holds great religious significance because of its connectionwith the story of the Prophet Moses.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 42,
+     "Name": "Callirrhoe",
+     "gov_key": 6,
+     "cat_key": 3,
+     "description": "Callirrhoe, also Kaligrohe, is an archaeological site located in Madaba Governorate, Jordan. The ruins include Roman bath and remains of anymphaeum.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 43,
+     "Name": "St. George´s Church, Madaba",
+     "gov_key": 6,
+     "cat_key": 4,
+     "description": "St. George´s Church is a Greek Orthodox church located in the city of Madaba in Jordan. The oldest history of the church dates back to the 6th",
+     "Name_arabic": "المسرح الروماني",
+     "description_arabic": "المسرح الذي بناه الرومان قديماً، يستخدم الآن للعروض الثقافية والموسيقية."
+    },
+    {
+     "key": 44,
+     "Name": "Virgin Mary Church, Madaba",
+     "gov_key": 6,
+     "cat_key": 4,
+     "description": "Virgin Mary Church is a ruined church located in the city of Madaba in Jordan. The church was built during the Umayyad era in 662 AD. It is considered one of the most important and oldest churches in the city, and it is located today within the Madaba Archaeological Park. The church isdistinguished by its mosaic floors.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 45,
+     "Name": "Latin Church",
+     "gov_key": 6,
+     "cat_key": 4,
+     "description": "Latin Church, or Latin Church of Saint John the Baptist, is a Roman Catholic church located in the city of Madaba, Jordan. It was built between 1880- 1883 AD as a small chapel on the site of the old city acropolis. The excavations conducted under the church provided many evidences about the city's long history. The church was completely rebuilt between 1903 and 1913.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 46,
+     "Name": "Apostles Church",
+     "gov_key": 6,
+     "cat_key": 4,
+     "description": "Apostles Church is a historical church from the Byzantine era located in the city of Madaba in Jordan. The church was discovered in 1902 AD and its name was known from an ancient mosaic inscription that also indicated the date of its construction (578 AD). The church is famous for its mosaic floor, which is considered one of the largest intact mosaic floors. The church was completely renovated in 1993 and the ceilings and wallswere added in a way that respects its heritage and historical value.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 47,
+     "Name": "Al-Maghtas",
+     "gov_key": 7,
+     "cat_key": 4,
+     "description": "Al-Maghtas is an archaeological site in Jordan on the east bank of the Jordan River, officially known as Baptism Site \"Bethany Beyond the Jordan\" (Al-Maghtas). It is considered to be the original location of the Baptism of Jesus. Al-Maghtas was inscribed as a UNESCO World Heritage Site in2015.",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 48,
+     "Name": "Al-Salt",
+     "gov_key": 7,
+     "cat_key": 5,
+     "description": "Al-Salt, or Salt, is an ancient agricultural town and administrative centre in west-central Jordan. It was built by the Macedonian army during the reign of Alexander the Great. The city was distinguished throughout its long history as a linking point between the eastern desert and the West, and its prosperity during the Ottoman era made it a magnet for Syrian and Lebanese merchants who contributed to the commercial and economic activity of the city. The city includes a group of historical buildings that offer a mixture of European architecture and the traditions of local architecture. The development of the city through all historical stages reflects the depth of tolerance and coexistence between all Muslim andChristian populations. Al-Salt was inscribed as a UNESCO World Heritage Site in 2021.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 49,
+     "Name": "Tell el-Hammam",
+     "gov_key": 7,
+     "cat_key": 3,
+     "description": "Tell el-Hammam is an archaeological mound located in Balqa Governorate, Jordan. The tell is dating back to the Bronze Age in the 3rd MillenniumBC.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 50,
+     "Name": "Al-Salt Castle",
+     "gov_key": 7,
+     "cat_key": 3,
+     "description": "Al-Salt Castle is a ruined castle located in the city of Al-Salt in the Balqa Governorate, Jordan. It was built at the beginning of the 13th century AD by Al-Mu'azzam Isa, the Ayyubid sultan of Damascus, and the son of al-Malik al-Adil, the brother of Saladin, during the period of the Crusades. The castle was destroyed in 1834 AD during Ibrahim Pasha's campaign in Syria. Only the wall remains of the castle today, in addition to a cemetery for Ottoman soldiers and a mosque built of its stones. The site was inscribed as a UNESCO World Heritage Site in 2021 as part of As-Salt - The Placeof Tolerance and Urban Hospitality.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 51,
+     "Name": "Abu Jaber House",
+     "gov_key": 7,
+     "cat_key": 3,
+     "description": "Abu Jaber House, today the Al-Salt Historical Museum or Abu Jaber Museum, is a historical building located in the city of Al-Salt in the Balqa Governorate in Jordan. It was built between 1892 and 1906 AD during the Ottoman era by Abu Jaber family, a family of the most notable merchants of that period. The house is distinguished by the architectural style that characterizes many Al-Salt buildings in the 19th century. It is built of yellow stone and is characterized by its beautiful decorations and drawings. Abu Jaber House was inscribed as a UNESCO World HeritageSite in 2021 as part of As-Salt - The Place of Tolerance and Urban Hospitality.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 52,
+     "Name": "Al-Salt Small Mosque",
+     "gov_key": 7,
+     "cat_key": 4,
+     "description": "Al-Salt Small Mosque is a historical mosque from the Ottoman era located in the city of Al-Salt in Balqa Governorate, Jordan. It was built between 1906 and 1907 AD using the yellow stones that characterize Al-Salt buildings of that period. The mosque was restored several times throughoutits history, and then was inscribed as a UNESCO World Heritage Site in 2021 as part of As-Salt - The Place of Tolerance and Urban Hospitality.",
+     "Name_arabic": "المسرح الروماني",
+     "description_arabic": "المسرح الذي بناه الرومان قديماً، يستخدم الآن للعروض الثقافية والموسيقية."
+    },
+    {
+     "key": 53,
+     "Name": "Al-Hammam Street, Al-Salt",
+     "gov_key": 7,
+     "cat_key": 5,
+     "description": "Al-Hammam Street is a historical street located in the city of Al-Salt in Balqa Governorate in Jordan. It was established between 1881 and 1918 AD. The street is paved with stones and includes on its sides many architectural and historical monuments of the city. Al-Hammam Street wasinscribed as a UNESCO World Heritage Site in 2021 as part of As-Salt - The Place of Tolerance and Urban Hospitality.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 54,
+     "Name": "Latin Church",
+     "gov_key": 7,
+     "cat_key": 4,
+     "description": "Latin Church, or Assumption of Our Lady Church, is a historic Catholic church located in the city of Al-Salt, Balqa Governorate, Jordan. It was built in 1886 AD and includes a monastery and a school. Latin Church was inscribed as a UNESCO World Heritage Site in 2021 as part of As-Salt - ThePlace of Tolerance and Urban Hospitality.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 55,
+     "Name": "St. George´s Church, Al-Salt",
+     "gov_key": 7,
+     "cat_key": 4,
+     "description": "St. George´s Church (Al-Khader Church) is a historical Orthodox church located on Al-Khader Street in Al-Salt, Balqa Governorate, Jordan. The church was built during the Ottoman era in 1682 AD and was restored during the first decade of the 21st century. St. George Church wasinscribed as a UNESCO World Heritage Site in 2021 as part of As-Salt - The Place of Tolerance and Urban Hospitality.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 56,
+     "Name": "Jawa Dam",
+     "gov_key": 8,
+     "cat_key": 3,
+     "description": "The Jawa Dam is the remains of an ancient masonry gravity dam on Wadi Rajil at Jawa in Mafraq Governorate, Jordan. It is the oldest known dam in the world, dating back to the fourth millennium BC. The dam was part of a water supply system that included other smaller dams, channels anddeflectors across the wadi to support the short lived local town of Jawa.",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 57,
+     "Name": "Qasr Aseikhin",
+     "gov_key": 8,
+     "cat_key": 3,
+     "description": "Qasr Aseikhin is a Roman fort, built from basalt in the 3rd century AD over the ruins of a 1st century Nabataean building.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 58,
+     "Name": "Qasr Deir Al-Kahf",
+     "gov_key": 8,
+     "cat_key": 3,
+     "description": "Qasr Deir Al-Kahf is an old Roman fort located in Mafraq Governorate, Jordan.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 59,
+     "Name": "Qasr el Burqu",
+     "gov_key": 8,
+     "cat_key": 3,
+     "description": "Qasr el Burqu is a ruined ancient palace and one of the oldest Umayyad desert palaces in Jordan. The palace is located in the Mafraq Governorate. It was originally an ancient Roman fortress that was renovated and rebuilt at the beginning of the 8th century AD by the Umayyad Caliph Al-WalidI.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 60,
+     "Name": "Um Aljmal",
+     "gov_key": 8,
+     "cat_key": 3,
+     "description": "Umm el-Jimal, Umm al-Jimal, is a village in Northern Jordan. It is primarily notable for the substantial ruins of a Byzantine and early Islamic townwhich are clearly visible above the ground, as well as an older Roman village located to the southwest of the Byzantine ruins.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 61,
+     "Name": "Bozrah",
+     "gov_key": 9,
+     "cat_key": 3,
+     "description": "Bozrah, also Bouseira or Buseirah, is an ancient city in southern modern-day Jordan. It was the capital city of Edom Kingdom.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 62,
+     "Name": "Punon",
+     "gov_key": 9,
+     "cat_key": 3,
+     "description": "Punon is an ancient city in Jordan. It was a center of copper and iron mines in the old history.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 63,
+     "Name": "Wadi Feynan Copper Mines",
+     "gov_key": 9,
+     "cat_key": 2,
+     "description": "Wadi Feynan is a major wadi and region in southern Jordan, on the border between Tafilah Governorate and Aqaba and Ma'an Governorates. Historically, the area had the largest copper deposits in the Southern Levant, which were intensively exploited from the Chalcolithic (4500-3100BC) through to the Mamluk period (1250-1516 AD). It also has a number of significant early prehistoric sites.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 64,
+     "Name": "Petra",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "Petra, or the Rose City, originally known as Raqmu to the Nabataeans, is an ancient and historical city located in Ma'an Governorate in southern Jordan. The city is famous for its rock-cut architecture and ancient water conduit system. It was founded in 312 BC and became the capital of the",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 65,
+     "Name": "Beidha",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "Beidha, also sometimes Bayda, is a major Neolithic archaeological site a few kilometres north of Petra in Jordan. It is included in Petra's inscriptionas a UNESCO World Heritage Site in 1985.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 66,
+     "Name": "Montreal Castle",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "Montreal Castle, also called Shoubak or Shawbak, is a Crusader castle. The ruins are located in modern town of Shoubak in Jordan. The castle wasbuilt in 1115 by Baldwin I of Jerusalem during his expedition to the area where he captured Aqaba on the Red Sea in 1116 AD.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 67,
+     "Name": "Vaux Moise Castle",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "Vaux Moise Castle, or Wu´ayra Castle, is a small Crusader castle located close to Wadi Musa in Ma´an Governorate in Jordan. It was founded in the 12th century AD by Baldwin I of Jerusalem as an outpost of the larger Crusader castle at Montreal, and also to serve as a point to control the tradeand military routes and pilgrimage caravans between the Levant, Egypt and the Hijaz.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 68,
+     "Name": "Tomb of Aaron",
+     "gov_key": 10,
+     "cat_key": 4,
+     "description": "Tomb of Aaron is a historical shrine located at the top of Jabal Harun (Mount Aaron), west of the Jordanian city of Petra in Ma´an Governorate. It is believed that the shrine is the burial place of Aaron, the brother of Moses. The shrine was completely renovated and a mosque was built by theMamluks in the 14th century AD.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 69,
+     "Name": "Byzantine Monastery at Jabal H",
+     "gov_key": 10,
+     "cat_key": 4,
+     "description": "Byzantine Monastery at Jabal Harun is a ruined monastery located on Jabal Harun (Mount Aaron), west of the city of Petra in Ma´an Governorate, Jordan. The construction of the monastery dates back to the Byzantine era, in the 5th century AD. The site includes a group of archaeologicalremains, including the paintings and mosaic floors, which date back to the 6th century AD.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 70,
+     "Name": "Temple of the Winged Lions",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "Temple of the Winged Lions is a large Nabataean temple complex located in the ancient city of Petra in Ma´an Governorate, southern Jordan. The construction of the temple dates back to the reign of Aretas IV Philopatris, the Nabatean king, who ruled between 9 BC and 40 AD. The temple was dedicated to the great goddess figure in the Nabataean religion, whose identity has not yet been determined, and it was destroyed in 363 ADdue to the great earthquake at the time. The temple was inscribed as a UNESCO World Heritage Site in 1985 as part of Petra.",
+     "Name_arabic": "المسرح الروماني",
+     "description_arabic": "المسرح الذي بناه الرومان قديماً، يستخدم الآن للعروض الثقافية والموسيقية."
+    },
+    {
+     "key": 71,
+     "Name": "Great Temple in Petra",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "The Great Temple is a grand temple complex located in the historic city of Petra in Ma´an Governorate in Jordan. It was built by the Nabataeans in the 1st century AD, and it remained in use in some later periods. The temple was inscribed as a UNESCO World Heritage Site in 1985 as part ofPetra.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 72,
+     "Name": "Qasr al-Bint",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "Qasr al-Bint is an ancient temple located in the Nabataean city of Petra in Ma´an Governorate, southern Jordan. The construction of the temple dates back to the 1st century AD, and it is distinguished by its architecture, unlike the method of carving in rocks that was prevalent in the city ofPetra. The temple was included in the UNESCO World Heritage List in 1985 as part of Petra.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 73,
+     "Name": "The Byzantine Church at Petra",
+     "gov_key": 10,
+     "cat_key": 3,
+     "description": "The Byzantine Church at Petra, or The Petra Church, is a ruined church that dates back to the Byzantine era and is located in the ancient city of Petra in Ma´an Governorate in southern Jordan. Archaeologists indicate that the church was originally built in the second half of the 5th century AD, and then continued its religious function until the early 7th century when it was destroyed by fire. The church was included in the UNESCOWorld Heritage List in 1985 as part of Petra",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 74,
+     "Name": "Er Rabba",
+     "gov_key": 11,
+     "cat_key": 3,
+     "description": "Er Rabba, Rabba, an ancient site in Jordan in the Karak Governorate. It has been known as Rabbath Moab. In the Hellenistic and Roman times it was called Areopolis. Rabba is home to Nabataean ruins, which are located along the main street in the center of town. They consist of a templeand a cavernous ancient reservoir. There are many smaller ruins scattered all over town albeit not as extensive.",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 75,
+     "Name": "Kerak Castle",
+     "gov_key": 11,
+     "cat_key": 3,
+     "description": "Kerak Castle, previously called by crusaders Crac des Moabites (Karak in Moab), is a large Crusader castle located in Karak, Jordan. It was built by Pagan the Butler, lord of Oultrejordain, and Fulk the Younger, King of Jerusalem, in 1142 AD. The castle, which is one of the largest Crusadercastles in the Levant, controlled trade routes from Damascus to Egypt and Mecca because of its location east of the Dead Sea.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    },
+    {
+     "key": 76,
+     "Name": "Hasa Fort",
+     "gov_key": 11,
+     "cat_key": 3,
+     "description": "Hasa Fort is an old fort built by Ottomans in the 18th Century AD in order to provided pilgrims with the accommodation, water and food. The fortis located in Karak Governorate, Jordan.",
+     "Name_arabic": "كنيسة سيدتنا في الجبل",
+     "description_arabic": "في عنجرة في شمال الأردن، تقع كنيسة سيدتنا في الجبل التي تعتبر مركزاً للعبادة المسيحية."
+    },
+    {
+     "key": 77,
+     "Name": "Qatrana Fort",
+     "gov_key": 11,
+     "cat_key": 3,
+     "description": "Qatrana Fort is an old fort built by Ottomans in the 16th Century AD in order to provided pilgrims with water and food. The fort is located in KarakGovernorate, Jordan.",
+     "Name_arabic": "محمية غابات عجلون",
+     "description_arabic": "تقع محمية غابات عجلون في المرتفعات الشمالية للأردن وتشتهر بتنوعها البيولوجي وجمالها الطبيعي."
+    },
+    {
+     "key": 78,
+     "Name": "Sanctuary of Agios Lot",
+     "gov_key": 11,
+     "cat_key": 4,
+     "description": "The Sanctuary of Agios Lot is located to the southeast of the Dead Sea overlooking the modern town of Safi in Jordan. It is a Byzantine era (5th -7th Centuries AD) monastic site that consists of a basilical church erected at the entrance to a natural cave.",
+     "Name_arabic": "متحف التاريخ",
+     "description_arabic": "متحف يعرض تاريخ الحضارات القديمة في المنطقة بتفاصيل غنية ومعروضات متنوعة."
+    },
+    {
+     "key": 79,
+     "Name": "Numeira",
+     "gov_key": 11,
+     "cat_key": 3,
+     "description": "Numeira is an archaeological site near the Dead Sea in Karak Governorate, Jordan. The site has substantial Early Bronze Age remains.",
+     "Name_arabic": "مسجد القديم",
+     "description_arabic": "أحد المساجد العريقة التي تم بناؤها في العهد العثماني ويتميز بزخرفته وعمارته التقليدية."
+    },
+    {
+     "key": 80,
+     "Name": "Bab edh-Dhra",
+     "gov_key": 11,
+     "cat_key": 3,
+     "description": "Bab edh-Dhra is an archaeological site located near the Dead Sea in Karak Governorate, Jordan. The site is an Early Bronze Age settlement dating back to the 4th millennium BC. The ruins consist of 2 large cemeteries known as Khirbet Qazone (3300-2000 BC) that include different styles ofburials: Shaft tombs, tumulus tombs and charnel houses (rectangular mudbrick burials where human skeletal remains are stored).",
+     "Name_arabic": "المسرح الروماني",
+     "description_arabic": "المسرح الذي بناه الرومان قديماً، يستخدم الآن للعروض الثقافية والموسيقية."
+    },
+    {
+     "key": 81,
+     "Name": "Wadi Rum",
+     "gov_key": 12,
+     "cat_key": 2,
+     "description": "Wadi Rum, also known as The Valley of the Moon, is a valley cut into the sandstone and granite rock in southern Jordan. Wadi Rum has been inhabited by many human cultures including the Nabataeans who left their mark in the form of rock paintings, graffiti, and temples. The site wasinscribed as a UNESCO World Heritage Site in 2011.",
+     "Name_arabic": "القصر الكبير",
+     "description_arabic": "قصر تاريخي يعود للعصر العباسي، معروف بأقواسه وتصاميمه المعمارية المعقدة."
+    },
+    {
+     "key": 82,
+     "Name": "Aqaba",
+     "gov_key": 12,
+     "cat_key": 1,
+     "description": "Aqaba, ancient Ayla, is the only coastal city in Jordan. Aqaba's strategic location at the northeastern tip of the Red Sea between the continents ofAsia and Africa, has made its port important over the course of thousands of years.",
+     "Name_arabic": "الحديقة الملكية",
+     "description_arabic": "حديقة واسعة تضم نباتات نادرة ومساحات خضراء للتنزه والاسترخاء."
+    },
+    {
+     "key": 83,
+     "Name": "Tell Hujayrat Al-Ghuzlan",
+     "gov_key": 12,
+     "cat_key": 3,
+     "description": "Tell Hujayrat Al-Ghuzlan is an archaeological site during the Chalcolithic period that lies north of Aqaba city in Jordan. Tell Hujayrat Al-Ghuzlan andthe neighboring Tell Al-Magass site in Aqaba both have extensive evidence of significant copper production and trade in the region.",
+     "Name_arabic": "قلعة عجلون",
+     "description_arabic": "قلعة عجلون، وتعرف أيضا بقلعة الربض، تقع في شمال الأردن وهي تاريخية تعود للعصور الوسطى."
+    },
+    {
+     "key": 84,
+     "Name": "Humayma",
+     "gov_key": 12,
+     "cat_key": 3,
+     "description": "Humayma is an ancient Roman site lies on Wadi Hisma in southern Jordan. The Roman expansion of Humayma included a large rectangular fort.",
+     "Name_arabic": "مسجد لستب",
+     "description_arabic": "مسجد لستب هو واحد من أقدم المساجد في الأردن ويتميز بعمارته الإسلامية القديمة."
+    },
+    {
+     "key": 85,
+     "Name": "Aqaba Church",
+     "gov_key": 12,
+     "cat_key": 4,
+     "description": "Aqaba Church is a historic church located in Aqaba, Jordan. It is considered to be the world's oldest-known purpose-built Christian church. Thechurch´s first phase was dated between 293 AD and 303 AD.",
+     "Name_arabic": "تل مار إلياس",
+     "description_arabic": "يرتبط تل مار إلياس بالنبي إلياس ويقع في الأردن، وهو موقع ديني ذو أهمية كبيرة."
+    }
+   ]
