@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gojo/const/consts.dart';
 import 'package:gojo/generated/l10n.dart';
+import 'package:gojo/home.dart';
 import 'package:gojo/jordanPage.dart';
 import 'package:gojo/profile.dart';
 import 'package:gojo/trip.dart';
@@ -21,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     listScreens = [
-      jordanPage(),
+      Home(),
       generateTrip(),
       profile(
         change: widget.change,

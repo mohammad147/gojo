@@ -162,6 +162,7 @@ flutter:
     - assets/Irbid/Pella/
     - assets/Irbid/Tell Zira’a/
     - assets/Irbid/Um Qais/
+    - assets/cities/
     
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
