@@ -3,7 +3,7 @@ double calculateTotalRate(List<Map<String, dynamic>> raters) {
   int numberOfRatings = raters.length;
 
   if (numberOfRatings == 0) {
-    return 0.0; // Return 0 if there are no ratings
+    return 0.0;
   }
 
   for (Map<String, dynamic> rating in raters) {
@@ -11,6 +11,6 @@ double calculateTotalRate(List<Map<String, dynamic>> raters) {
   }
 
   double averageRate = totalRate / numberOfRatings;
-  double ratingOutOfFive = (averageRate / 5) * 5; // Convert to scale out of 5
+  double ratingOutOfFive = (averageRate / 5) * 5;
   return ratingOutOfFive;
 }

@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -54,7 +55,7 @@ class _generateTripState extends State<generateTrip> {
         ),
       ),
       body: StreamBuilder(
-          stream: FirebaseFirestore.instance.collection('trips').snapshots(),
+          stream: FirebaseFirestore.instance.collection('trips').where("userid",isEqualTo: FirebaseAuth.instance.currentUser!.email).snapshots(),
           builder: (context, AsyncSnapshot snapshot) {
             if (ConnectionState.waiting == snapshot.connectionState) {
               return const Center(

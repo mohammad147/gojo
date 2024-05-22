@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gojo/const/consts.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/home.dart';
-import 'package:gojo/jordanPage.dart';
 import 'package:gojo/profile.dart';
 import 'package:gojo/trip.dart';
 
@@ -22,8 +21,8 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     listScreens = [
-      Home(),
       generateTrip(),
+      Home(),
       profile(
         change: widget.change,
       ),
@@ -47,10 +46,11 @@ class _HomePageState extends State<HomePage> {
             },
             items: [
               BottomNavigationBarItem(
-                  icon: Icon(Icons.map_outlined), label: S.of(context).home),
-              BottomNavigationBarItem(
                   icon: Icon(Icons.time_to_leave_sharp),
                   label: S.of(context).trip),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.map_outlined), label: S.of(context).home),
+              
               BottomNavigationBarItem(
                   icon: Icon(Icons.account_box_outlined),
                   label: S.of(context).myProfile)

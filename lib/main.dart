@@ -7,7 +7,6 @@ import 'package:gojo/Places.dart';
 import 'package:gojo/firebase_options.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/home.dart';
-import 'package:gojo/jordanPage.dart';
 import 'package:gojo/loginPage.dart';
 import 'package:gojo/term_of_use.dart';
 import 'package:gojo/widgets/rating.dart';

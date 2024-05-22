@@ -6,7 +6,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:gojo/firebase_options.dart';
 import 'package:gojo/functions.dart';
 import 'package:gojo/generated/l10n.dart';
-import 'package:gojo/jordanPage.dart';
 import 'package:gojo/loginPage.dart';
 import 'package:gojo/term_of_use.dart';
 import 'package:gojo/widgets/p_card.dart';
