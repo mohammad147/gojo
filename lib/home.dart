@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gojo/Places.dart';
+import 'package:gojo/widgets/c_card.dart';
 import 'package:gojo/widgets/p_card.dart';
 import 'package:intl/intl.dart';
 
@@ -50,12 +51,13 @@ class _HomeState extends State<Home> {
             }
 
             var data = snapshot.data!.docs;
+            print("${data[0]['images']}");
             return ListView.separated(
               padding: const EdgeInsets.all(15),
               itemCount: data.length,
               separatorBuilder: (context, index) => const SizedBox(height: 15),
               itemBuilder: (context, index) {
-                return PCard(
+                return CCard(
                   onTap: () {
                     Navigator.push(
                         context,
@@ -65,7 +67,7 @@ class _HomeState extends State<Home> {
                           ),
                         ));
                   },
-                  image: data[index]['images'][0],
+                  image: data[index]['images'],
                   title: data[index][title_local],
                 );
               },

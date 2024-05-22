@@ -45,6 +45,7 @@ dependencies:
   local_auth: ^2.2.0
   confirm_dialog: ^1.0.3
   carousel_slider: ^4.2.1
+  flutter_rating_bar: ^4.0.0
   
 dev_dependencies:
   flutter_test:

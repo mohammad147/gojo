@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:gojo/Places.dart';
@@ -9,10 +10,10 @@ import 'package:gojo/home.dart';
 import 'package:gojo/jordanPage.dart';
 import 'package:gojo/loginPage.dart';
 import 'package:gojo/term_of_use.dart';
+import 'package:gojo/widgets/rating.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
- 
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -66,6 +67,7 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -90,7 +92,7 @@ class _MyAppState extends State<MyApp> {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 241, 66, 53)),
         useMaterial3: true,
       ),
-       home: SignInPage(change: changeLanguage,),
+      home: SignInPage(change: changeLanguage),
     );
   }
 }

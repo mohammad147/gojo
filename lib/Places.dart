@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:gojo/firebase_options.dart';
+import 'package:gojo/functions.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/jordanPage.dart';
 import 'package:gojo/loginPage.dart';
@@ -61,12 +62,13 @@ class _PlacesState extends State<Places> {
             }
 
             var data = snapshot.data!.docs;
-            print("testtt $data");
+
             return ListView.separated(
               padding: const EdgeInsets.all(15),
               itemCount: data.length,
               separatorBuilder: (context, index) => const SizedBox(height: 15),
               itemBuilder: (context, index) {
+                print("testtt ${data[index]['key']}");
                 return PCard(
                   onTap: () {
                     Navigator.push(
@@ -77,8 +79,11 @@ class _PlacesState extends State<Places> {
                           ),
                         ));
                   },
-                  image: data[index]['images'][0],
+                  image: data[index]['images'],
                   title: data[index][name_local],
+                  id: data[index]['key'],
+                  rate: calculateTotalRate((data[index]['rates'] as List)
+                      .cast<Map<String, dynamic>>()),
                 );
               },
             );

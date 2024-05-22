@@ -1,31 +1,22 @@
-import 'dart:ffi';
-
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:gojo/widgets/rating.dart';
 
-class PCard extends StatefulWidget {
+class CCard extends StatefulWidget {
   final List<dynamic> image;
   final Function onTap;
   final String title;
-  final int id;
-  final double rate;
-  PCard({
+  CCard({
     super.key,
     required this.onTap,
     required this.image,
     required this.title,
-    required this.id,
-    required this.rate,
   });
 
   @override
-  State<PCard> createState() => _PCardState();
+  State<CCard> createState() => _CCardState();
 }
 
-class _PCardState extends State<PCard> {
+class _CCardState extends State<CCard> {
   @override
   void initState() {
     print("ghhghghgh${widget.image}");
@@ -48,7 +39,7 @@ class _PCardState extends State<PCard> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  widget.image.isNotEmpty
+                  widget.image.length != 1
                       ? CarouselSlider(
                           options: CarouselOptions(
                             autoPlay: true,
@@ -67,7 +58,14 @@ class _PCardState extends State<PCard> {
                                   ))
                               .toList(),
                         )
-                      : Image.asset("gojo/assets/logo/logo.jpg"),
+                      : widget.image.isNotEmpty
+                          ? Image.network(
+                              widget.image[0],
+                              width: double.infinity,
+                              fit: BoxFit.fill,
+                              height: 150,
+                            )
+                          : Image.asset("gojo/assets/logo/logo.jpg"),
                   //
                   //     ? Image.network(
                   //         widget.image,
@@ -86,15 +84,6 @@ class _PCardState extends State<PCard> {
                           widget.title,
                           style: const TextStyle(
                               fontSize: 17, color: Colors.black),
-                        ),
-                        const SizedBox(height: 10),
-                        Container(
-                          child: CustomRatingBar(
-                            initialRating: widget.rate,
-                            itemCount: 5,
-                            itemSize: 15,
-                            ignoreGestures: true,
-                          ),
                         ),
                         const SizedBox(height: 10),
                       ],
