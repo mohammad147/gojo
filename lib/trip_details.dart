@@ -103,7 +103,7 @@ class _TripDetailsState extends State<TripDetails> {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 backgroundColor: Colors.green,
-                                content: Text("Place removed Successfuly"),
+                                content: Text("Please rate this place"),
                               ),
                             );
                           });

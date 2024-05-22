@@ -8,9 +8,10 @@ import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/homepage.dart';
 import 'package:gojo/profile.dart';
 import 'package:gojo/signup.dart';
-import 'package:gojo/auth.dart' as auth1; // Prefix this import
+import 'package:gojo/auth.dart' as auth1;
 import 'package:gojo/auth_service.dart' as auth2;
-import 'package:shared_preferences/shared_preferences.dart'; // Prefix this import
+import 'package:shared_preferences/shared_preferences.dart';
+
 
 class SignInPage extends StatefulWidget {
   SignInPage({

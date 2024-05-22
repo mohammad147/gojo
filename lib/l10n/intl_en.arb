@@ -29,6 +29,7 @@
     "lname":"Family Name",
     "fill":"please fill the form",
     "back":"Back",
-    "edit_my_prof_button":"Edit My Profile Button"
-
+    "edit_my_prof_button":"Edit My Profile Button",
+    "place_remove1":"Place removed successfully",
+    "rate_place":"Please rate this place"
 }

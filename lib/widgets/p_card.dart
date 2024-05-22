@@ -1,10 +1,13 @@
 import 'dart:ffi';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:gojo/weather_service.dart';
 import 'package:gojo/widgets/rating.dart';
+import 'package:weather/weather.dart';
 
 class PCard extends StatefulWidget {
   final List<dynamic> image;
@@ -12,6 +15,7 @@ class PCard extends StatefulWidget {
   final String title;
   final int id;
   final double rate;
+  final String city;
   PCard({
     super.key,
     required this.onTap,
@@ -19,20 +23,38 @@ class PCard extends StatefulWidget {
     required this.title,
     required this.id,
     required this.rate,
+    required this.city,
   });
 
   @override
   State<PCard> createState() => _PCardState();
+  
 }
 
 class _PCardState extends State<PCard> {
+  final WeatherService _weatherService = WeatherService();
+  Weather? _weather;
+
   @override
   void initState() {
-    print("ghhghghgh${widget.image}");
+
     // TODO: implement initState
     super.initState();
-  }
+        _fetchWeather();
 
+  }
+Future<void> _fetchWeather() async {
+    Weather weather = await _weatherService.getCurrentWeather(widget.city);
+    setState(() {
+      _weather = weather;
+    });
+  }
+  String _weatherIcon(String? iconCode) {
+    if (iconCode == null) return "";
+    final iconUrl = 'http://openweathermap.org/img/wn/$iconCode@2x.png';
+
+    return iconUrl;
+  }
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -82,20 +104,29 @@ class _PCardState extends State<PCard> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(height: 10),
-                        Text(
-                          widget.title,
-                          style: const TextStyle(
-                              fontSize: 17, color: Colors.black),
-                        ),
-                        const SizedBox(height: 10),
-                        Container(
-                          child: CustomRatingBar(
-                            initialRating: widget.rate,
-                            itemCount: 5,
-                            itemSize: 15,
-                            ignoreGestures: true,
+                        Row(
+                          children:[ Text(
+                            widget.title,
+                            style: const TextStyle(
+                                fontSize: 17, color: Colors.black),
                           ),
-                        ),
+                          Spacer(),
+                          Text(
+                    '${_weather?.temperature?.celsius?.toStringAsFixed(1)}°C'),
+                       ] ),
+                        const SizedBox(height: 10),
+                        Row(
+                          children: [Container(
+                            child: CustomRatingBar(
+                              initialRating: widget.rate,
+                              itemCount: 5,
+                              itemSize: 15,
+                              ignoreGestures: true,
+                            ),
+                          ),
+                          Spacer(),
+                          Image.network(_weatherIcon(_weather?.weatherIcon),height: 40,)  ,
+                      ]),
                         const SizedBox(height: 10),
                       ],
                     ),

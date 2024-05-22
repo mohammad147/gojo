@@ -64,6 +64,7 @@ class _HomeState extends State<Home> {
                         MaterialPageRoute(
                           builder: (context) => Places(
                             id: data[index].id,
+                            city: data[index]["title"],
                           ),
                         ));
                   },

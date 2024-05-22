@@ -14,8 +14,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 
 class Places extends StatefulWidget {
-  Places({super.key, required this.id});
+  Places({super.key, required this.id,required this.city});
   String id;
+  String city;
   @override
   State<Places> createState() => _PlacesState();
 }
@@ -78,7 +79,7 @@ class _PlacesState extends State<Places> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => places_with_details(image: data[index]['images'],Name: data[index][name_local],rate: calculateTotalRate((data[index]['rates'] as List)
-                      .cast<Map<String, dynamic>>()),description: data[index][description_local],),
+                      .cast<Map<String, dynamic>>()),description: data[index][description_local],weatherName: data[index]["Name"],),
                         ));
                   },
                   image: data[index]['images'],
@@ -86,6 +87,7 @@ class _PlacesState extends State<Places> {
                   id: data[index]['key'],
                   rate: calculateTotalRate((data[index]['rates'] as List)
                       .cast<Map<String, dynamic>>()),
+                      city: widget.city
                 );
               },
             );
