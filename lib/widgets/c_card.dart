@@ -81,7 +81,7 @@ class _CCardState extends State<CCard> {
                       children: [
                         const SizedBox(height: 10),
                         Text(
-                          widget.title,
+                          widget.title.toUpperCase(),
                           style: const TextStyle(
                               fontSize: 17, color: Colors.black),
                         ),

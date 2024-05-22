@@ -7,6 +7,7 @@ import 'package:gojo/firebase_options.dart';
 import 'package:gojo/functions.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/loginPage.dart';
+import 'package:gojo/places_with_details.dart';
 import 'package:gojo/term_of_use.dart';
 import 'package:gojo/widgets/p_card.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -21,12 +22,15 @@ class Places extends StatefulWidget {
 
 class _PlacesState extends State<Places> {
   String name_local = "Name";
+  String description_local = "description";
 
   void getLoc() {
     String currLocale = Intl.getCurrentLocale();
     if (currLocale == "en") {
+      description_local = "description";
       name_local = "Name";
     } else {
+      description_local = "description_ar";
       name_local = "name_ar";
     }
   }
@@ -73,9 +77,8 @@ class _PlacesState extends State<Places> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Places(
-                            id: data[index].id,
-                          ),
+                          builder: (context) => places_with_details(image: data[index]['images'],Name: data[index][name_local],rate: calculateTotalRate((data[index]['rates'] as List)
+                      .cast<Map<String, dynamic>>()),description: data[index][description_local],),
                         ));
                   },
                   image: data[index]['images'],
