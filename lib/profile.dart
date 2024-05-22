@@ -97,10 +97,10 @@ class _profileState extends State<profile> {
                       borderRadius: BorderRadius.circular(100)),
                   onTap: () async {
                     if (await confirm(context)) {
-                      FirebaseAuth.instance.currentUser!.delete();
+                       FirebaseAuth.instance.currentUser!.delete();
                       Navigator.of(context).pushAndRemoveUntil(
                           MaterialPageRoute(
-                            builder: (context) => SignInPage(
+                           builder: (context) => SignInPage(
                               change: widget.change,
                             ),
                           ),

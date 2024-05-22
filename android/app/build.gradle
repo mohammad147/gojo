@@ -29,7 +29,15 @@ android {
     namespace "com.example.gojo"
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
-
+    
+    defaultConfig {
+        applicationId "com.example.gojo"
+        minSdkVersion 23 // Ensure this is at least 23
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+    
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

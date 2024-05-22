@@ -46,5 +46,7 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<string>this app using face id</string>
 	<true/>
+	<key>NSFaceIDUsageDescription</key>
+    <string>We need to use your Face ID to authenticate you</string>
 </dict>
 </plist>

@@ -2,20 +2,112 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gojo/auth.dart';
+import 'package:gojo/auth_service.dart';
 import 'package:gojo/const/consts.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/homepage.dart';
 import 'package:gojo/profile.dart';
 import 'package:gojo/signup.dart';
+import 'package:gojo/auth.dart' as auth1; // Prefix this import
+import 'package:gojo/auth_service.dart' as auth2;
+import 'package:shared_preferences/shared_preferences.dart'; // Prefix this import
 
-class SignInPage extends StatelessWidget {
-  SignInPage({super.key, required this.change});
+class SignInPage extends StatefulWidget {
+  SignInPage({
+    super.key,
+    required this.change,
+  });
   Function() change;
+
+  @override
+  State<SignInPage> createState() => _SignInPageState();
+}
+
+class _SignInPageState extends State<SignInPage> {
   final _formKey = GlobalKey<FormState>();
 
   final TextEditingController _email = TextEditingController();
 
   final TextEditingController _pass = TextEditingController();
+  String UserName = "";
+  String pass = "";
+
+  final AuthService_finger _authService = AuthService_finger();
+  late SharedPreferences k;
+  bool _canCheckBiometrics = false;
+
+  bool _authenticated = false;
+  void getk() async {
+    k = await SharedPreferences.getInstance();
+    UserName = k.getString("Email").toString();
+    pass = k.getString("Password").toString();
+  }
+
+  @override
+  void initState() {
+    getk();
+       
+    super.initState();
+    _checkBiometrics();
+     _authenticate();
+  }
+
+  Future<void> _checkBiometrics() async {
+    bool canCheckBiometrics = await _authService.canCheckBiometrics();
+    setState(() {
+      _canCheckBiometrics = canCheckBiometrics;
+    });
+  }
+
+  Future<void> _authenticate() async {
+    bool authenticated = await _authService.authenticate();
+    setState(() {
+      _authenticated = authenticated;
+    });
+    loginUsing_auth(authenticated);
+  }
+
+  void setlogInDetails() {
+    setState(() {
+      k.setString("Email", _email.text);
+      k.setString("Password", _pass.text);
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(
+            builder: (context) => HomePage(
+              change: widget.change,
+            ),
+          ),
+          (Route<dynamic> route) => false);
+    });
+  }
+
+  void loginUsing_auth(bool authenticated) async {
+    if (authenticated) {
+
+      if (UserName != "" && pass != "") {
+        final message = await AuthService().login(
+          email: UserName,
+          password: pass,
+        );
+        if (message!.contains('Success')) {
+          if (!context.mounted) return;
+          Navigator.of(context).pushAndRemoveUntil(
+              MaterialPageRoute(
+                builder: (context) => HomePage(
+                  change: widget.change,
+                ),
+              ),
+              (Route<dynamic> route) => false);
+        }
+        if (!context.mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(message),
+          ),
+        );
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -87,21 +179,13 @@ class SignInPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                     onPressed: () async {
-                      print(_email.text);
-                      print(_pass.text);
                       final message = await AuthService().login(
                         email: _email.text,
                         password: _pass.text,
                       );
                       if (message!.contains('Success')) {
                         if (!context.mounted) return;
-                        Navigator.of(context).pushAndRemoveUntil(
-                            MaterialPageRoute(
-                              builder: (context) => HomePage(
-                                change: change,
-                              ),
-                            ),
-                            (Route<dynamic> route) => false);
+                        setlogInDetails();
                       }
                       if (!context.mounted) return;
                       ScaffoldMessenger.of(context).showSnackBar(
@@ -115,12 +199,12 @@ class SignInPage extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => signUp(
-                                change: change,
+                                change: widget.change,
                               )));
                     },
                     child: Text(S.of(context).SignUp)),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: _authenticate,
                     icon: Icon(
                       Icons.fingerprint,
                       size: w / 6,

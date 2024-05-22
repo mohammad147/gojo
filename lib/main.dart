@@ -92,7 +92,7 @@ class _MyAppState extends State<MyApp> {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 241, 66, 53)),
         useMaterial3: true,
       ),
-      home: SignInPage(change: changeLanguage),
+      home: SignInPage(change: changeLanguage,),
     );
   }
 }
