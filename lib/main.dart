@@ -82,6 +82,7 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: S.delegate.supportedLocales,
       title: 'GOJO',
       theme: ThemeData(
+        textTheme: TextTheme(headline1: TextStyle(fontFamily: 'Merriweather Light 300')),
         listTileTheme: ListTileThemeData(
             tileColor: Colors.white,
             shape: OutlineInputBorder(borderRadius: BorderRadius.circular(15))),

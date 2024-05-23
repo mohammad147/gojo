@@ -46,9 +46,11 @@ class _PlacesState extends State<Places> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+            backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Places'),
+        title: const Text('Places',style: const TextStyle(
+            color: Colors.white)),
       ),
       body: StreamBuilder(
           stream: FirebaseFirestore.instance

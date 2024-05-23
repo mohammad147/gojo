@@ -1,0 +1,44 @@
+{
+
+      "en": {
+        "introduction": "Welcome to GoJo. We are committed to protecting your personal data and your privacy. This privacy policy explains how we collect, use, and share your personal information.",
+        "data_we_collect": {
+          "personal_information": "Name, email address, phone number, and other contact details.",
+          "location_data": "Your location information to provide better recommendations.",
+          "usage_data": "Information on how you use our app, including the features you use and the time spent on the app."
+        },
+        "how_we_use_your_data": [
+          "To provide and maintain our service.",
+          "To notify you about changes to our service.",
+          "To allow you to participate in interactive features of our service.",
+          "To provide customer support.",
+          "To gather analysis or valuable information so that we can improve our service.",
+          "To monitor the usage of our service."
+        ],
+        "data_sharing": "We do not share your personal data with third parties except as necessary to operate our services or comply with the law.",
+        "data_security": "We strive to use commercially acceptable means to protect your personal data, but we cannot guarantee its absolute security.",
+        "changes_to_this_privacy_policy": "We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page.",
+        "contact_us": "If you have any questions about this privacy policy, please contact us at support@gojo.com."
+      },
+      "ar": {
+        "introduction": "مرحبًا بك في GoJo. نحن ملتزمون بحماية بياناتك الشخصية وخصوصيتك. تشرح سياسة الخصوصية هذه كيف نجمع معلوماتك الشخصية ونستخدمها ونشاركها.",
+        "data_we_collect": {
+          "personal_information": "الاسم، عنوان البريد الإلكتروني، رقم الهاتف، وتفاصيل الاتصال الأخرى.",
+          "location_data": "معلومات موقعك لتقديم توصيات أفضل.",
+          "usage_data": "معلومات حول كيفية استخدامك لتطبيقنا، بما في ذلك الميزات التي تستخدمها والوقت الذي تقضيه على التطبيق."
+        },
+        "how_we_use_your_data": [
+          "لتقديم وصيانة خدماتنا.",
+          "لإعلامك بالتغييرات التي تطرأ على خدماتنا.",
+          "للسماح لك بالمشاركة في الميزات التفاعلية لخدماتنا.",
+          "لتقديم دعم العملاء.",
+          "لجمع التحليلات أو المعلومات القيمة حتى نتمكن من تحسين خدماتنا.",
+          "لمراقبة استخدام خدماتنا."
+        ],
+        "data_sharing": "نحن لا نشارك بياناتك الشخصية مع أطراف ثالثة إلا بالقدر اللازم لتشغيل خدماتنا أو الامتثال للقانون.",
+        "data_security": "نسعى لاستخدام وسائل مقبولة تجاريًا لحماية بياناتك الشخصية، لكن لا يمكننا ضمان أمانها المطلق.",
+        "changes_to_this_privacy_policy": "قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سنعلمك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة.",
+        "contact_us": "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا على support@gojo.com."
+      }
+  }
+  

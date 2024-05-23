@@ -190,10 +190,10 @@ class S {
     );
   }
 
-  /// `Home`
+  /// `Jordan`
   String get home {
     return Intl.message(
-      'Home',
+      'Jordan',
       name: 'home',
       desc: '',
       args: [],
@@ -350,11 +350,81 @@ class S {
     );
   }
 
-  /// `Edit My Profile Button`
+  /// `Edit My Profile`
   String get edit_my_prof_button {
     return Intl.message(
-      'Edit My Profile Button',
+      'Edit My Profile',
       name: 'edit_my_prof_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `History`
+  String get history {
+    return Intl.message(
+      'History',
+      name: 'history',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Trip Details`
+  String get Trip_Details {
+    return Intl.message(
+      'Trip Details',
+      name: 'Trip_Details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please rate this place`
+  String get please_rate {
+    return Intl.message(
+      'Please rate this place',
+      name: 'please_rate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get Cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'Cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ok`
+  String get Ok {
+    return Intl.message(
+      'Ok',
+      name: 'Ok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `how we use your data`
+  String get how_we_use_your_data {
+    return Intl.message(
+      'how we use your data',
+      name: 'how_we_use_your_data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `privacy policy`
+  String get privacy_policy {
+    return Intl.message(
+      'privacy policy',
+      name: 'privacy_policy',
       desc: '',
       args: [],
     );

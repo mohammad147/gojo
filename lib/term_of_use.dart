@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
+import 'package:gojo/generated/l10n.dart';
+
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -48,13 +50,22 @@ class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
     h = MediaQuery.of(context).size.height;
-    return Scaffold(
+    return Scaffold(backgroundColor: Colors.white,
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          S.of(context).terms,
+          style: const TextStyle(
+            color: Colors.white,
+          ),
+        ),
+      ),
         body: ListView(
           children: [Column(
                   children: [
                     Text(
                       catalogdata["terms_of_use"][currlocale]["introduction"],
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                      style: TextStyle( fontWeight: FontWeight.bold),
                     ),
                     ListView.builder(
                       physics: NeverScrollableScrollPhysics(),
@@ -67,12 +78,12 @@ class _MyWidgetState extends State<MyWidget> {
                     catalogdata["terms_of_use"][currlocale]["sections"]
                         [index]['title'],
                     style: TextStyle(
-                        color: Colors.white,
+                        
                         fontWeight: FontWeight.bold)),
                 Text(
                     catalogdata["terms_of_use"][currlocale]["sections"]
                         [index]['content'],
-                    style: TextStyle(color: Colors.white)),
+                    ),
               ],
            
           );

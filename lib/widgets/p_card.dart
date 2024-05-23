@@ -28,33 +28,34 @@ class PCard extends StatefulWidget {
 
   @override
   State<PCard> createState() => _PCardState();
-  
 }
 
 class _PCardState extends State<PCard> {
   final WeatherService _weatherService = WeatherService();
   Weather? _weather;
-
+  bool _weatherdone = false;
   @override
   void initState() {
-
     // TODO: implement initState
     super.initState();
-        _fetchWeather();
-
+    _fetchWeather();
   }
-Future<void> _fetchWeather() async {
+
+  Future<void> _fetchWeather() async {
     Weather weather = await _weatherService.getCurrentWeather(widget.city);
     setState(() {
       _weather = weather;
+      _weatherdone = true;
     });
   }
+
   String _weatherIcon(String? iconCode) {
     if (iconCode == null) return "";
     final iconUrl = 'http://openweathermap.org/img/wn/$iconCode@2x.png';
 
     return iconUrl;
   }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -104,19 +105,21 @@ Future<void> _fetchWeather() async {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(height: 10),
-                        Row(
-                          children:[ Text(
+                        Row(children: [
+                          Text(
                             widget.title,
                             style: const TextStyle(
                                 fontSize: 17, color: Colors.black),
                           ),
                           Spacer(),
-                          Text(
-                    '${_weather?.temperature?.celsius?.toStringAsFixed(1)}°C'),
-                       ] ),
+                          _weatherdone
+                              ? Text(
+                                  '${_weather?.temperature?.celsius?.toStringAsFixed(1)}°C')
+                              : Text("")
+                        ]),
                         const SizedBox(height: 10),
-                        Row(
-                          children: [Container(
+                        Row(children: [
+                          Container(
                             child: CustomRatingBar(
                               initialRating: widget.rate,
                               itemCount: 5,
@@ -125,8 +128,13 @@ Future<void> _fetchWeather() async {
                             ),
                           ),
                           Spacer(),
-                          Image.network(_weatherIcon(_weather?.weatherIcon),height: 40,)  ,
-                      ]),
+                          _weatherdone
+                              ? Image.network(
+                                  _weatherIcon(_weather?.weatherIcon),
+                                  height: 40,
+                                )
+                              : Text(""),
+                        ]),
                         const SizedBox(height: 10),
                       ],
                     ),

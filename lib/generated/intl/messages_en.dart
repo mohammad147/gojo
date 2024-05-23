@@ -23,9 +23,12 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Age": MessageLookupByLibrary.simpleMessage("Age"),
+        "Cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "Email": MessageLookupByLibrary.simpleMessage("Email Address"),
+        "Ok": MessageLookupByLibrary.simpleMessage("Ok"),
         "Password": MessageLookupByLibrary.simpleMessage("Password"),
         "SignUp": MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "Trip_Details": MessageLookupByLibrary.simpleMessage("Trip Details"),
         "Username": MessageLookupByLibrary.simpleMessage("Username"),
         "Weight": MessageLookupByLibrary.simpleMessage("Weight"),
         "about": MessageLookupByLibrary.simpleMessage("About"),
@@ -37,14 +40,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete Account"),
         "editProfile": MessageLookupByLibrary.simpleMessage("Edit My Profile"),
         "edit_my_prof_button":
-            MessageLookupByLibrary.simpleMessage("Edit My Profile Button"),
+            MessageLookupByLibrary.simpleMessage("Edit My Profile"),
         "fill": MessageLookupByLibrary.simpleMessage("please fill the form"),
         "fname": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPass":
             MessageLookupByLibrary.simpleMessage("Forgot My Password"),
         "generate": MessageLookupByLibrary.simpleMessage("Start You Trip"),
         "height": MessageLookupByLibrary.simpleMessage("Height"),
-        "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "history": MessageLookupByLibrary.simpleMessage("History"),
+        "home": MessageLookupByLibrary.simpleMessage("Jordan"),
+        "how_we_use_your_data":
+            MessageLookupByLibrary.simpleMessage("how we use your data"),
         "language": MessageLookupByLibrary.simpleMessage("عربي"),
         "language_name": MessageLookupByLibrary.simpleMessage("Language"),
         "lname": MessageLookupByLibrary.simpleMessage("Family Name"),
@@ -52,7 +58,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "logOut": MessageLookupByLibrary.simpleMessage("Log Out"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "myProfile": MessageLookupByLibrary.simpleMessage("My Profile"),
+        "please_rate":
+            MessageLookupByLibrary.simpleMessage("Please rate this place"),
         "previousTrips": MessageLookupByLibrary.simpleMessage("Previous Trips"),
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("privacy policy"),
         "privary": MessageLookupByLibrary.simpleMessage("privacy Policy"),
         "terms": MessageLookupByLibrary.simpleMessage("Terms Of Use"),
         "trip": MessageLookupByLibrary.simpleMessage("Trip"),

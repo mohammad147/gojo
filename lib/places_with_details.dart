@@ -58,7 +58,8 @@ class _PCardState extends State<places_with_details> {
   @override
   Widget build(BuildContext context) {
    // _fetchWeather();
-    return Card(
+    return 
+    Card(  
       surfaceTintColor: Colors.white,
       clipBehavior: Clip.hardEdge,
       child: Row(

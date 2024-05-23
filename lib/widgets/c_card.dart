@@ -83,7 +83,7 @@ class _CCardState extends State<CCard> {
                         Text(
                           widget.title.toUpperCase(),
                           style: const TextStyle(
-                              fontSize: 17, color: Colors.black),
+                              fontSize: 17, color: Colors.black,fontFamily: 'Merriweather'),
                         ),
                         const SizedBox(height: 10),
                       ],

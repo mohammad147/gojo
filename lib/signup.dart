@@ -93,6 +93,7 @@ class _signUpState extends State<signUp> {
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return S.of(context).fill;
+                          
                         }
                       },
                       controller: _lname,
@@ -112,6 +113,11 @@ class _signUpState extends State<signUp> {
                           fontWeight: FontWeight.bold),
                     ),
                     TextFormField(
+                       validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return S.of(context).fill;
+                        }
+                       },
                       controller: _email,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -120,6 +126,7 @@ class _signUpState extends State<signUp> {
                         filled: true,
                         prefixIcon: Icon(Icons.email),
                       ),
+                      
                     ),
                     Text(
                       S.of(context).Password,

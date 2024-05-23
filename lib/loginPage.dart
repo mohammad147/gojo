@@ -12,7 +12,6 @@ import 'package:gojo/auth.dart' as auth1;
 import 'package:gojo/auth_service.dart' as auth2;
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 class SignInPage extends StatefulWidget {
   SignInPage({
     super.key,
@@ -47,10 +46,10 @@ class _SignInPageState extends State<SignInPage> {
   @override
   void initState() {
     getk();
-       
+
     super.initState();
     _checkBiometrics();
-     _authenticate();
+    _authenticate();
   }
 
   Future<void> _checkBiometrics() async {
@@ -84,7 +83,6 @@ class _SignInPageState extends State<SignInPage> {
 
   void loginUsing_auth(bool authenticated) async {
     if (authenticated) {
-
       if (UserName != "" && pass != "") {
         final message = await AuthService().login(
           email: UserName,
@@ -155,6 +153,11 @@ class _SignInPageState extends State<SignInPage> {
                             borderRadius:
                                 BorderRadius.all(Radius.circular(100))),
                         child: TextFormField(
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return S.of(context).fill;
+                            }
+                          },
                           controller: _email,
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
@@ -180,20 +183,22 @@ class _SignInPageState extends State<SignInPage> {
                 ),
                 ElevatedButton(
                     onPressed: () async {
-                      final message = await AuthService().login(
-                        email: _email.text,
-                        password: _pass.text,
-                      );
-                      if (message!.contains('Success')) {
+                      if (_formKey.currentState!.validate()) {
+                        final message = await AuthService().login(
+                          email: _email.text,
+                          password: _pass.text,
+                        );
+                        if (message!.contains('Success')) {
+                          if (!context.mounted) return;
+                          setlogInDetails();
+                        }
                         if (!context.mounted) return;
-                        setlogInDetails();
-                      }
-                      if (!context.mounted) return;
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(message),
-                        ),
-                      );
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(message),
+                          ),
+                        );
+                      } 
                     },
                     child: Text(S.of(context).logIn)),
                 ElevatedButton(
@@ -234,6 +239,11 @@ class _passwordState extends State<password> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return S.of(context).fill;
+        }
+      },
       controller: widget.pass,
       obscureText: password_show,
       decoration: InputDecoration(

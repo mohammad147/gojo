@@ -24,7 +24,6 @@ class TripDetails extends StatefulWidget {
 
 class _TripDetailsState extends State<TripDetails> {
   String title_local = "Name";
-
   void getLoc() {
     String currLocale = Intl.getCurrentLocale();
     if (currLocale == "en") {
@@ -42,7 +41,7 @@ class _TripDetailsState extends State<TripDetails> {
         centerTitle: true,
         title: Text(
           // S.of(context).trip,
-          'Trip Details',
+          S.of(context).Trip_Details,
           style: const TextStyle(
             color: Colors.white,
           ),
@@ -103,7 +102,7 @@ class _TripDetailsState extends State<TripDetails> {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 backgroundColor: Colors.green,
-                                content: Text("Please rate this place"),
+                                content: Text(S.of(context).please_rate),
                               ),
                             );
                           });
@@ -121,7 +120,7 @@ class _TripDetailsState extends State<TripDetails> {
                               return AlertDialog(
                                 surfaceTintColor: Colors.white,
                                 backgroundColor: Colors.white,
-                                title: Text('Please rate this place'),
+                                title: Text(S.of(context).please_rate),
                                 content: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
@@ -141,7 +140,7 @@ class _TripDetailsState extends State<TripDetails> {
                                     onPressed: () {
                                       Navigator.pop(context);
                                     },
-                                    child: Text('Cancel'),
+                                    child: Text(S.of(context).Cancel),
                                   ),
                                   TextButton(
                                     onPressed: () async {
@@ -182,8 +181,9 @@ class _TripDetailsState extends State<TripDetails> {
                                                 (value) =>
                                                     Navigator.pop(context));
                                       }
+                                      
                                     },
-                                    child: Text('Ok'),
+                                    child: Text(S.of(context).Ok),
                                   ),
                                 ],
                               );

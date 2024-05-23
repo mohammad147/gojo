@@ -34,9 +34,13 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Home'),
+        title: const Text('Home',style: const TextStyle(
+            color: Colors.white,
+          ),),
+        
       ),
       body: StreamBuilder(
           stream: FirebaseFirestore.instance.collection('cities').snapshots(),

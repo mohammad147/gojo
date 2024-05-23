@@ -34,26 +34,13 @@ class _generateTripState extends State<generateTrip> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          S.of(context).trip,
+          S.of(context).history,
           style: const TextStyle(
             color: Colors.white,
           ),
         ),
       ),
-      floatingActionButton: ElevatedButton(
-        style: const ButtonStyle(
-          padding: MaterialStatePropertyAll(EdgeInsets.all(10)),
-          backgroundColor:
-              MaterialStatePropertyAll(Color.fromARGB(255, 255, 87, 87)),
-          shape: MaterialStatePropertyAll(CircleBorder()),
-        ),
-        onPressed: () {},
-        child: const Icon(
-          Icons.add,
-          size: 30,
-          color: Colors.white,
-        ),
-      ),
+     
       body: StreamBuilder(
           stream: FirebaseFirestore.instance.collection('trips').where("userid",isEqualTo: FirebaseAuth.instance.currentUser!.email).snapshots(),
           builder: (context, AsyncSnapshot snapshot) {

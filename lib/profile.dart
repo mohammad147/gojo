@@ -10,6 +10,7 @@ import 'package:gojo/auth.dart';
 import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/loginPage.dart';
 import 'package:gojo/my_profile.dart';
+import 'package:gojo/policy.dart';
 import 'package:gojo/term_of_use.dart';
 
 class profile extends StatefulWidget {
@@ -49,39 +50,48 @@ class _profileState extends State<profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 255, 138, 138),
-        body: ListView(
-          shrinkWrap: true,
-          children: [
-            FutureBuilder(
+     backgroundColor: Colors.white,
+      appBar: AppBar(
+        centerTitle: true,
+        title:  FutureBuilder(
               future: getusername(),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
-                  return Text(
-                    "${S.of(context).welcome} $_name ",
-                    style: TextStyle(
-                        fontSize: 50,
-                        color: Color.fromARGB(255, 248, 158, 158)),
+                  return Row(
+                    children: [
+                      Icon(Icons.account_circle,size: 40,),
+                      Text(
+                        "${S.of(context).welcome}, $_name ",
+                        style: TextStyle(
+                            color: Colors.white),
+                      ),
+                    ],
                   );
                 } else {
                   return CircularProgressIndicator();
                 }
               },
             ),
+      ), 
+        body: ListView(
+          shrinkWrap: true,
+          children: [
+           
             Text(
               S.of(context).editProfile,
             ),
             Container(
               margin: EdgeInsets.only(left: 15, right: 15, top: 10),
               child: ListTile(
+                tileColor: Color.fromARGB(255, 255, 87, 87),
+                textColor: Colors.white,
                   onTap: () {
                     print(Data);
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) =>
                             edit_profile(Data: Data!, email: _email!)));
                   },
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(100)),
+        
                   leading: Icon(
                     Icons.account_box_rounded,
                   ),
@@ -93,14 +103,15 @@ class _profileState extends State<profile> {
             Container(
               margin: EdgeInsets.only(left: 15, right: 15, top: 10),
               child: ListTile(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(100)),
+                tileColor: Color.fromARGB(255, 255, 87, 87),
+                                textColor: Colors.white,
+
                   onTap: () async {
                     if (await confirm(context)) {
-                       FirebaseAuth.instance.currentUser!.delete();
+                      FirebaseAuth.instance.currentUser!.delete();
                       Navigator.of(context).pushAndRemoveUntil(
                           MaterialPageRoute(
-                           builder: (context) => SignInPage(
+                            builder: (context) => SignInPage(
                               change: widget.change,
                             ),
                           ),
@@ -117,8 +128,9 @@ class _profileState extends State<profile> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               child: ListTile(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(100)),
+                tileColor: Color.fromARGB(255, 255, 87, 87),
+                                textColor: Colors.white,
+
                   onTap: () async {
                     if (await confirm(context)) {
                       FirebaseAuth.instance.signOut();
@@ -142,8 +154,9 @@ class _profileState extends State<profile> {
             Container(
                 margin: EdgeInsets.only(left: 15, right: 15, top: 10),
                 child: ListTile(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(100)),
+                  tileColor: Color.fromARGB(255, 255, 87, 87),
+                                  textColor: Colors.white,
+
                     leading: Icon(
                       Icons.question_mark_rounded,
                     ),
@@ -153,13 +166,15 @@ class _profileState extends State<profile> {
             Container(
               margin: EdgeInsets.only(left: 15, right: 15, top: 10),
               child: ListTile(
+                tileColor: Color.fromARGB(255, 255, 87, 87),
+                                textColor: Colors.white,
+
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => MyWidget(),
                     ));
                   },
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(100)),
+
                   leading: Icon(
                     Icons.shield,
                   ),
@@ -170,8 +185,14 @@ class _profileState extends State<profile> {
             Container(
               margin: EdgeInsets.only(left: 15, right: 15, top: 10),
               child: ListTile(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(100)),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => policy_page(),
+                    ));
+                  },
+               tileColor: Color.fromARGB(255, 255, 87, 87),
+                               textColor: Colors.white,
+
                   leading: Icon(
                     Icons.security,
                   ),
@@ -183,8 +204,8 @@ class _profileState extends State<profile> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               child: ListTile(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(100)),
+          tileColor: Color.fromARGB(255, 255, 87, 87),
+                          textColor: Colors.white,
                 onTap: widget.change,
                 leading: Icon(
                   Icons.language,

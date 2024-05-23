@@ -13,7 +13,7 @@
     "myProfile":"حسابي",
     "generate":"ابدء رحلتك",
     "previousTrips":"رحلاتي السابقه",
-    "home":"الرئيسيه",
+    "home":"الاردن",
     "trip":"الرحلات",
     "welcome":"مرحبا",
     "editProfile":"تعديل معلوماتي",
@@ -30,6 +30,12 @@
     "fill":"الرجاء تعبه الحقل",
     "back":"الرجوع",
     "edit_my_prof_button":"تعديل",
-    "place_remove1":"تم ازاله المكان",
-    "sss":"قيم المكان"
+    "history":"السجل",
+    "Trip_Details":"تفاصيل الاماكن",
+    "please_rate":"ارجو تقيم المكان",
+    "Cancel":"الغاء",
+    "Ok":"موافق",
+    "how_we_use_your_data":"كيف نستخدم بياناتك",
+    "privacy_policy":"سياسة الخصوصية"
+
 }

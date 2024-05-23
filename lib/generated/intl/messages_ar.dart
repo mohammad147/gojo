@@ -23,9 +23,12 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Age": MessageLookupByLibrary.simpleMessage("العمر"),
+        "Cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "Email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "Ok": MessageLookupByLibrary.simpleMessage("موافق"),
         "Password": MessageLookupByLibrary.simpleMessage("كلمه المرور"),
         "SignUp": MessageLookupByLibrary.simpleMessage("مستخدم جديد"),
+        "Trip_Details": MessageLookupByLibrary.simpleMessage("تفاصيل الاماكن"),
         "Username": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "Weight": MessageLookupByLibrary.simpleMessage("الوزن"),
         "about": MessageLookupByLibrary.simpleMessage("عنا"),
@@ -41,7 +44,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمه السر"),
         "generate": MessageLookupByLibrary.simpleMessage("ابدء رحلتك"),
         "height": MessageLookupByLibrary.simpleMessage("ألطول"),
-        "home": MessageLookupByLibrary.simpleMessage("الرئيسيه"),
+        "history": MessageLookupByLibrary.simpleMessage("السجل"),
+        "home": MessageLookupByLibrary.simpleMessage("الاردن"),
+        "how_we_use_your_data":
+            MessageLookupByLibrary.simpleMessage("كيف نستخدم بياناتك"),
         "language": MessageLookupByLibrary.simpleMessage("english"),
         "language_name": MessageLookupByLibrary.simpleMessage("اللغه"),
         "lname": MessageLookupByLibrary.simpleMessage("الاسم العائله"),
@@ -49,7 +55,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "logOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "myProfile": MessageLookupByLibrary.simpleMessage("حسابي"),
+        "please_rate": MessageLookupByLibrary.simpleMessage("ارجو تقيم المكان"),
         "previousTrips": MessageLookupByLibrary.simpleMessage("رحلاتي السابقه"),
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "privary": MessageLookupByLibrary.simpleMessage("سياسات"),
         "terms": MessageLookupByLibrary.simpleMessage("كيفيه الاستعمال"),
         "trip": MessageLookupByLibrary.simpleMessage("الرحلات"),
