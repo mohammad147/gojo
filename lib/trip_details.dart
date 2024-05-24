@@ -34,6 +34,13 @@ class _TripDetailsState extends State<TripDetails> {
   }
 
   @override
+  void initState() {
+    getLoc();
+    // TODO: implement initState
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
@@ -90,7 +97,6 @@ class _TripDetailsState extends State<TripDetails> {
 
                       var p_data =
                           snapshot.data!.data() as Map<String, dynamic>;
-                      print(p_data['Name']);
                       return TCard(
                         onRemoveTap: () async {
                           var tempData = data['places'] as List;
@@ -110,7 +116,6 @@ class _TripDetailsState extends State<TripDetails> {
                         onDoneTap: () async {
                           String? email =
                               FirebaseAuth.instance.currentUser?.email;
-
                           //  bool isUserRateBefore= await FirebaseFirestore.instance.collection('')
                           //  if()
                           showDialog(
@@ -181,7 +186,6 @@ class _TripDetailsState extends State<TripDetails> {
                                                 (value) =>
                                                     Navigator.pop(context));
                                       }
-                                      
                                     },
                                     child: Text(S.of(context).Ok),
                                   ),
@@ -191,7 +195,7 @@ class _TripDetailsState extends State<TripDetails> {
                           );
                         },
                         image: p_data['images'],
-                        title: p_data['Name'],
+                        title: p_data["Name"],
                         rate: calculateTotalRate((p_data['rates'] as List)
                             .cast<Map<String, dynamic>>()),
                       );

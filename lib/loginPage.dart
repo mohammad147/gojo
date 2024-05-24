@@ -183,20 +183,20 @@ class _SignInPageState extends State<SignInPage> {
                 ),
                 ElevatedButton(
                     onPressed: () async {
-                      final message = await AuthService().login(
-                        email: _email.text,
-                        password: _pass.text,
-                      );
-                      if (message!.contains('Success')) {
+                        final message = await AuthService().login(
+                          email: _email.text,
+                          password: _pass.text,
+                        );
+                        if (message!.contains('Success')) {
+                          if (!context.mounted) return;
+                          setlogInDetails();
+                        }
                         if (!context.mounted) return;
-                        setlogInDetails();
-                      }
-                      if (!context.mounted) return;
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(message),
-                        ),
-                      );
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(message),
+                          ),
+                        );
                     },
                     child: Text(S.of(context).logIn)),
                 ElevatedButton(

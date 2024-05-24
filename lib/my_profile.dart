@@ -115,7 +115,7 @@ class edit_profile extends StatelessWidget {
                           fontSize: 20,
                           fontWeight: FontWeight.bold),
                     ),
-                    password(
+                    Pass_edit(
                       pass: _pass,
                     ),
                     Text(
@@ -126,6 +126,15 @@ class edit_profile extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                     TextFormField(
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return S.of(context).errormsgpleaseenteravlue;
+                        }
+                        if (int.parse(value!) < 14 || int.parse(value) > 71) {
+                          return S.of(context).ageerror;
+                        }
+                      },
+                      keyboardType: TextInputType.number,
                       //initialValue: Data["Age"],
                       controller: _age,
                       decoration: InputDecoration(
@@ -144,6 +153,15 @@ class edit_profile extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                     TextFormField(
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return S.of(context).errormsgpleaseenteravlue;
+                        }
+                        if (int.parse(value!) < 135 || int.parse(value) > 220) {
+                          return S.of(context).heighterror;
+                        }
+                      },
+                      keyboardType: TextInputType.number,
                       //initialValue: Data["Height"],
                       controller: _height,
                       decoration: InputDecoration(
@@ -163,7 +181,16 @@ class edit_profile extends StatelessWidget {
                     ),
                     TextFormField(
                       // initialValue: Data["Weight"],
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return S.of(context).errormsgpleaseenteravlue;
+                        }
+                        if (int.parse(value!) < 35 || int.parse(value) > 149) {
+                          return S.of(context).weighterror;
+                        }
+                      },
                       controller: _weight,
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(100)),
@@ -178,22 +205,24 @@ class edit_profile extends StatelessWidget {
               ElevatedButton(
                   child: Text(S.of(context).edit_my_prof_button),
                   onPressed: () async {
-                    if (await confirm(context)) {
-                      FirebaseFirestore.instance
-                          .collection("users")
-                          .doc(email)
-                          .set({
-                        "firstName": _fname.text,
-                        "LastName": _lname.text,
-                        "Age": _age.text,
-                        "Weight": _weight.text,
-                        "Height": _height.text,
-                      });
-                      if (_pass.text.isNotEmpty) {
-                        auth.currentUser?.updatePassword(_pass.text);
+                    if (_formKey.currentState!.validate()) {
+                      if (await confirm(context)) {
+                        FirebaseFirestore.instance
+                            .collection("users")
+                            .doc(email)
+                            .set({
+                          "firstName": _fname.text,
+                          "LastName": _lname.text,
+                          "Age": _age.text,
+                          "Weight": _weight.text,
+                          "Height": _height.text,
+                        });
+                        if (_pass.text.isNotEmpty) {
+                          auth.currentUser?.updatePassword(_pass.text);
+                        }
+                        Navigator.of(context).pop();
+                        ;
                       }
-                      Navigator.of(context).pop();
-                      ;
                     }
                   }),
               ElevatedButton(
@@ -205,6 +234,46 @@ class edit_profile extends StatelessWidget {
           ),
         ]),
       ),
+    );
+  }
+}
+
+class Pass_edit extends StatefulWidget {
+  Pass_edit({super.key, this.pass});
+
+  TextEditingController? pass;
+
+  @override
+  State<Pass_edit> createState() => _Pass_editState();
+}
+
+class _Pass_editState extends State<Pass_edit> {
+  bool password_show = true;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      controller: widget.pass,
+      obscureText: password_show,
+      decoration: InputDecoration(
+          prefixIcon: Icon(Icons.password),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(100)),
+          fillColor: Colors.white,
+          filled: true,
+          suffixIcon: IconButton(
+              onPressed: () {
+                if (password_show)
+                  setState(() {
+                    password_show = false;
+                  });
+                else {
+                  setState(() {
+                    password_show = true;
+                  });
+                }
+              },
+              icon: Icon(
+                  password_show ? Icons.visibility_off : Icons.visibility))),
     );
   }
 }

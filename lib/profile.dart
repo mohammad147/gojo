@@ -59,7 +59,7 @@ class _profileState extends State<profile> {
                 if (snapshot.hasData) {
                   return Row(
                     children: [
-                      Icon(Icons.account_circle,size: 40,),
+                      Icon(Icons.account_circle,size: 40,color: Colors.white,),
                       Text(
                         "${S.of(context).welcome}, $_name ",
                         style: TextStyle(
@@ -93,7 +93,7 @@ class _profileState extends State<profile> {
                   },
         
                   leading: Icon(
-                    Icons.account_box_rounded,
+                    Icons.account_box_rounded,color: Colors.white,
                   ),
                   title: Text(
                     S.of(context).myProfile,
@@ -119,7 +119,7 @@ class _profileState extends State<profile> {
                     }
                   },
                   leading: Icon(
-                    Icons.delete,
+                    Icons.delete ,color: Colors.white,
                   ),
                   title: Text(
                     S.of(context).deleteAccount,
@@ -144,7 +144,7 @@ class _profileState extends State<profile> {
                     }
                   },
                   leading: Icon(
-                    Icons.logout,
+                    Icons.logout,color: Colors.white,
                   ),
                   title: Text(
                     S.of(context).logOut,
@@ -158,7 +158,7 @@ class _profileState extends State<profile> {
                                   textColor: Colors.white,
 
                     leading: Icon(
-                      Icons.question_mark_rounded,
+                      Icons.question_mark_rounded,color: Colors.white,
                     ),
                     title: Text(
                       S.of(context).about,
@@ -176,7 +176,7 @@ class _profileState extends State<profile> {
                   },
 
                   leading: Icon(
-                    Icons.shield,
+                    Icons.shield,color: Colors.white,
                   ),
                   title: Text(
                     S.of(context).terms,
@@ -194,7 +194,7 @@ class _profileState extends State<profile> {
                                textColor: Colors.white,
 
                   leading: Icon(
-                    Icons.security,
+                    Icons.security,color: Colors.white,
                   ),
                   title: Text(
                     S.of(context).privary,
@@ -208,7 +208,7 @@ class _profileState extends State<profile> {
                           textColor: Colors.white,
                 onTap: widget.change,
                 leading: Icon(
-                  Icons.language,
+                  Icons.language,color: Colors.white,
                 ),
                 title: Text(
                   S.of(context).language,

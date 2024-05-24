@@ -9,6 +9,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gojo/model.dart';
 import 'package:gojo/my_profile.dart';
+import 'package:gojo/tripped_with_AI.dart';
 import 'package:http/http.dart' as http;
 
 class Trip_with_AI extends StatefulWidget {
@@ -216,6 +217,10 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
         'places': places5,
       });
       String docId = docRef.id;
+       Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Trip_after_generate(trip_id: docId,),
+                          ));
     } catch (e) {
       // Handle the error
       print("Error saving to database: $e");
@@ -259,6 +264,7 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
                 update_info();
               } else {
                 _getPrediction();
+                 
               }
             },
           ),
