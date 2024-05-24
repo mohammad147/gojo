@@ -36,6 +36,11 @@
     "Cancel":"الغاء",
     "Ok":"موافق",
     "how_we_use_your_data":"كيف نستخدم بياناتك",
-    "privacy_policy":"سياسة الخصوصية"
+    "privacy_policy":"سياسة الخصوصية",
+    "pleaseUpdate":"ارجو تعديل بيناتك",
+    "errormsgpleaseenteravlue":"ارجو اضافه قيمه",
+    "ageerror":"العمر بين 15 و 70 سنه",
+    "heighterror":"الطول بين 135 و 220",
+    "weighterror":"الوزن بين 36 و 149"
 
 }

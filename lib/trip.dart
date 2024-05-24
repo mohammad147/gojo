@@ -69,7 +69,7 @@ class _generateTripState extends State<generateTrip> {
                           ),
                         ));
                   },
-                  image: [data[index]['image']],
+                  image: [data[index]['images']],
                   title: data[index]['title'],
                 );
               },

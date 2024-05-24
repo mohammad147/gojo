@@ -35,5 +35,11 @@
 "Cancel":"Cancel",
 "Ok":"Ok",
 "how_we_use_your_data":"how we use your data",
-"privacy_policy":"privacy policy"
+"privacy_policy":"privacy policy",
+"pleaseUpdate":"please update your info",
+"errormsgpleaseenteravlue":"Please enter a value",
+"ageerror":"Age should be between 14 and 70 years old",
+"heighterror":"height should be between 135 and 220",
+"weighterror":"weight should be between 36 and 149"
+
 }

@@ -429,6 +429,56 @@ class S {
       args: [],
     );
   }
+
+  /// `please update your info`
+  String get pleaseUpdate {
+    return Intl.message(
+      'please update your info',
+      name: 'pleaseUpdate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a value`
+  String get errormsgpleaseenteravlue {
+    return Intl.message(
+      'Please enter a value',
+      name: 'errormsgpleaseenteravlue',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Age should be between 14 and 70 years old`
+  String get ageerror {
+    return Intl.message(
+      'Age should be between 14 and 70 years old',
+      name: 'ageerror',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `height should be between 135 and 220`
+  String get heighterror {
+    return Intl.message(
+      'height should be between 135 and 220',
+      name: 'heighterror',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `weight should be between 36 and 149`
+  String get weighterror {
+    return Intl.message(
+      'weight should be between 36 and 149',
+      name: 'weighterror',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

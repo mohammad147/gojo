@@ -34,16 +34,22 @@ class MessageLookup extends MessageLookupByLibrary {
         "about": MessageLookupByLibrary.simpleMessage("عنا"),
         "accountSettings":
             MessageLookupByLibrary.simpleMessage("اعدادات الحساب"),
+        "ageerror":
+            MessageLookupByLibrary.simpleMessage("العمر بين 15 و 70 سنه"),
         "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
         "ceateAnAccount": MessageLookupByLibrary.simpleMessage("انشئ حساب"),
         "deleteAccount": MessageLookupByLibrary.simpleMessage("احذف حسابي"),
         "editProfile": MessageLookupByLibrary.simpleMessage("تعديل معلوماتي"),
         "edit_my_prof_button": MessageLookupByLibrary.simpleMessage("تعديل"),
+        "errormsgpleaseenteravlue":
+            MessageLookupByLibrary.simpleMessage("ارجو اضافه قيمه"),
         "fill": MessageLookupByLibrary.simpleMessage("الرجاء تعبه الحقل"),
         "fname": MessageLookupByLibrary.simpleMessage("الاسم الاول"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمه السر"),
         "generate": MessageLookupByLibrary.simpleMessage("ابدء رحلتك"),
         "height": MessageLookupByLibrary.simpleMessage("ألطول"),
+        "heighterror":
+            MessageLookupByLibrary.simpleMessage("الطول بين 135 و 220"),
         "history": MessageLookupByLibrary.simpleMessage("السجل"),
         "home": MessageLookupByLibrary.simpleMessage("الاردن"),
         "how_we_use_your_data":
@@ -55,6 +61,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "logOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "myProfile": MessageLookupByLibrary.simpleMessage("حسابي"),
+        "pleaseUpdate":
+            MessageLookupByLibrary.simpleMessage("ارجو تعديل بيناتك"),
         "please_rate": MessageLookupByLibrary.simpleMessage("ارجو تقيم المكان"),
         "previousTrips": MessageLookupByLibrary.simpleMessage("رحلاتي السابقه"),
         "privacy_policy":
@@ -62,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "privary": MessageLookupByLibrary.simpleMessage("سياسات"),
         "terms": MessageLookupByLibrary.simpleMessage("كيفيه الاستعمال"),
         "trip": MessageLookupByLibrary.simpleMessage("الرحلات"),
+        "weighterror":
+            MessageLookupByLibrary.simpleMessage("الوزن بين 36 و 149"),
         "welcome": MessageLookupByLibrary.simpleMessage("مرحبا")
       };
 }

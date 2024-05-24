@@ -34,6 +34,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "about": MessageLookupByLibrary.simpleMessage("About"),
         "accountSettings":
             MessageLookupByLibrary.simpleMessage("Account Settings"),
+        "ageerror": MessageLookupByLibrary.simpleMessage(
+            "Age should be between 14 and 70 years old"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "ceateAnAccount":
             MessageLookupByLibrary.simpleMessage("Create An Account"),
@@ -41,12 +43,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "editProfile": MessageLookupByLibrary.simpleMessage("Edit My Profile"),
         "edit_my_prof_button":
             MessageLookupByLibrary.simpleMessage("Edit My Profile"),
+        "errormsgpleaseenteravlue":
+            MessageLookupByLibrary.simpleMessage("Please enter a value"),
         "fill": MessageLookupByLibrary.simpleMessage("please fill the form"),
         "fname": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPass":
             MessageLookupByLibrary.simpleMessage("Forgot My Password"),
         "generate": MessageLookupByLibrary.simpleMessage("Start You Trip"),
         "height": MessageLookupByLibrary.simpleMessage("Height"),
+        "heighterror": MessageLookupByLibrary.simpleMessage(
+            "height should be between 135 and 220"),
         "history": MessageLookupByLibrary.simpleMessage("History"),
         "home": MessageLookupByLibrary.simpleMessage("Jordan"),
         "how_we_use_your_data":
@@ -58,6 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "logOut": MessageLookupByLibrary.simpleMessage("Log Out"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "myProfile": MessageLookupByLibrary.simpleMessage("My Profile"),
+        "pleaseUpdate":
+            MessageLookupByLibrary.simpleMessage("please update your info"),
         "please_rate":
             MessageLookupByLibrary.simpleMessage("Please rate this place"),
         "previousTrips": MessageLookupByLibrary.simpleMessage("Previous Trips"),
@@ -66,6 +74,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "privary": MessageLookupByLibrary.simpleMessage("privacy Policy"),
         "terms": MessageLookupByLibrary.simpleMessage("Terms Of Use"),
         "trip": MessageLookupByLibrary.simpleMessage("Trip"),
+        "weighterror": MessageLookupByLibrary.simpleMessage(
+            "weight should be between 36 and 149"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome")
       };
 }
