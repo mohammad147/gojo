@@ -54,20 +54,7 @@ class _TripDetailsState extends State<TripDetails> {
           ),
         ),
       ),
-      floatingActionButton: ElevatedButton(
-        style: const ButtonStyle(
-          padding: MaterialStatePropertyAll(EdgeInsets.all(10)),
-          backgroundColor:
-              MaterialStatePropertyAll(Color.fromARGB(255, 255, 87, 87)),
-          shape: MaterialStatePropertyAll(CircleBorder()),
-        ),
-        onPressed: () {},
-        child: const Icon(
-          Icons.add,
-          size: 30,
-          color: Colors.white,
-        ),
-      ),
+      
       body: StreamBuilder(
           stream: FirebaseFirestore.instance
               .collection('trips')

@@ -41,6 +41,8 @@
     "errormsgpleaseenteravlue":"ارجو اضافه قيمه",
     "ageerror":"العمر بين 15 و 70 سنه",
     "heighterror":"الطول بين 135 و 220",
-    "weighterror":"الوزن بين 36 و 149"
+    "weighterror":"الوزن بين 36 و 149",
+    "jordanpage":"المحافظات",
+    "generate_trip":"اصنع رحلتك"
 
 }

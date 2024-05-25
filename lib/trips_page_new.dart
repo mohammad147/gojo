@@ -52,6 +52,7 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
       setState(() {
         _prediction = responseJson['predicted_ratings'];
         print(_prediction);
+        
         allplaces_sorted = sortplaces(_prediction, allplaces);
         getTitleAndName();
       });
@@ -78,7 +79,7 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
                         return S.of(context).errormsgpleaseenteravlue;
                       }
                       final n = int.tryParse(value!);
-                      if (n! < 16 || n! > 71) {
+                      if (n! < 14 || n! > 71) {
                         return S.of(context).ageerror;
                       }
                     },
@@ -217,10 +218,11 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
         'places': places5,
       });
       String docId = docRef.id;
-       Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => Trip_after_generate(trip_id: docId,),
-                          ));
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Trip_after_generate(
+          trip_id: docId,
+        ),
+      ));
     } catch (e) {
       // Handle the error
       print("Error saving to database: $e");
@@ -241,8 +243,8 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           centerTitle: true,
-          title: const Text(
-            'generate trip',
+          title: Text(
+            S.of(context).generate_trip,
             style: const TextStyle(
               color: Colors.white,
             ),
@@ -255,8 +257,8 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
                   MaterialStatePropertyAll(Color.fromARGB(255, 255, 87, 87)),
               alignment: Alignment.center,
             ),
-            child: const Text(
-              'generate trip',
+            child:  Text(
+              S.of(context).generate_trip,
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {
@@ -264,7 +266,6 @@ class _Trip_with_AIState extends State<Trip_with_AI> {
                 update_info();
               } else {
                 _getPrediction();
-                 
               }
             },
           ),

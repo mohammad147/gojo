@@ -50,6 +50,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetPass":
             MessageLookupByLibrary.simpleMessage("Forgot My Password"),
         "generate": MessageLookupByLibrary.simpleMessage("Start You Trip"),
+        "generate_trip":
+            MessageLookupByLibrary.simpleMessage("generate a trip"),
         "height": MessageLookupByLibrary.simpleMessage("Height"),
         "heighterror": MessageLookupByLibrary.simpleMessage(
             "height should be between 135 and 220"),
@@ -57,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Jordan"),
         "how_we_use_your_data":
             MessageLookupByLibrary.simpleMessage("how we use your data"),
+        "jordanpage": MessageLookupByLibrary.simpleMessage("provinces"),
         "language": MessageLookupByLibrary.simpleMessage("عربي"),
         "language_name": MessageLookupByLibrary.simpleMessage("Language"),
         "lname": MessageLookupByLibrary.simpleMessage("Family Name"),

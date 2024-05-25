@@ -479,6 +479,26 @@ class S {
       args: [],
     );
   }
+
+  /// `provinces`
+  String get jordanpage {
+    return Intl.message(
+      'provinces',
+      name: 'jordanpage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `generate a trip`
+  String get generate_trip {
+    return Intl.message(
+      'generate a trip',
+      name: 'generate_trip',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

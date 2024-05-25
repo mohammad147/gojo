@@ -40,6 +40,8 @@
 "errormsgpleaseenteravlue":"Please enter a value",
 "ageerror":"Age should be between 14 and 70 years old",
 "heighterror":"height should be between 135 and 220",
-"weighterror":"weight should be between 36 and 149"
+"weighterror":"weight should be between 36 and 149",
+"jordanpage":"provinces",
+"generate_trip":"generate a trip"
 
 }

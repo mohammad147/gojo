@@ -47,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "fname": MessageLookupByLibrary.simpleMessage("الاسم الاول"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمه السر"),
         "generate": MessageLookupByLibrary.simpleMessage("ابدء رحلتك"),
+        "generate_trip": MessageLookupByLibrary.simpleMessage("اصنع رحلتك"),
         "height": MessageLookupByLibrary.simpleMessage("ألطول"),
         "heighterror":
             MessageLookupByLibrary.simpleMessage("الطول بين 135 و 220"),
@@ -54,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("الاردن"),
         "how_we_use_your_data":
             MessageLookupByLibrary.simpleMessage("كيف نستخدم بياناتك"),
+        "jordanpage": MessageLookupByLibrary.simpleMessage("المحافظات"),
         "language": MessageLookupByLibrary.simpleMessage("english"),
         "language_name": MessageLookupByLibrary.simpleMessage("اللغه"),
         "lname": MessageLookupByLibrary.simpleMessage("الاسم العائله"),

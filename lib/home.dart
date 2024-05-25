@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gojo/Places.dart';
+import 'package:gojo/generated/l10n.dart';
 import 'package:gojo/widgets/c_card.dart';
 import 'package:gojo/widgets/p_card.dart';
 import 'package:intl/intl.dart';
@@ -37,7 +38,7 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Home',style: const TextStyle(
+        title: Text(S.of(context).jordanpage,style: const TextStyle(
             color: Colors.white,
           ),),
         
@@ -55,7 +56,6 @@ class _HomeState extends State<Home> {
             }
 
             var data = snapshot.data!.docs;
-            print("${data[0]['images']}");
             return ListView.separated(
               padding: const EdgeInsets.all(15),
               itemCount: data.length,

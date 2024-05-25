@@ -30,8 +30,8 @@ class edit_profile extends StatelessWidget {
       _fname.text = Data["firstName"];
       _lname.text = Data["LastName"];
       _age.text = Data["Age"];
-      _height.text = Data["Weight"];
-      _weight.text = Data["Height"];
+      _height.text = Data["Height"];
+      _weight.text = Data["Weight"];
     }
 
     return Scaffold(
